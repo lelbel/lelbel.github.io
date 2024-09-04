@@ -1,6 +1,6 @@
 body {
-    background-color: #769e27;
-    color: #eaffb9;
+    background-color: #0F0326;
+    color: #F5F7DC;
     font-family: Tahoma;
 }
 header, main, footer {
@@ -12,11 +12,11 @@ h1, h2, p, nav {
     text-align: center;
 }
 hr {
-    background-color: #fff44f;
+    background-color: #E65F5C;
     border: none;
     height: 2px;
     width: auto;
 }
 a {
-    color: #8b0000;
+    color: #E65F5C;
 }
