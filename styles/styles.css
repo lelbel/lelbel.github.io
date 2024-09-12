@@ -41,17 +41,17 @@ footer nav {
 /*-----Fonts-----*/
 @font-face {
     font-family: Roboto;
-    src: url(/resources/fonts/Roboto-Regular.ttf);
+    src: url(/fonts/Roboto-Regular.ttf);
 }
 
 @font-face {
     font-family: Roboto-Light;
-    src: url(/resources/fonts/Roboto-Light.ttf);
+    src: url(/fonts/Roboto-Light.ttf);
 }
 
 @font-face {
     font-family: Roboto-Bold;
-    src: url(/resources/fonts/Roboto-Bold.ttf);
+    src: url(/fonts/Roboto-Bold.ttf);
 }
 
 /*-----Navigation Bar-----*/
