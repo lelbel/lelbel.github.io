@@ -163,14 +163,14 @@ footer nav {
     margin-bottom: 70px;
 }
 
-.row h1 {
+h1.row  {
     font-size: 35px;
     text-align: left;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.row h2 {
+h2.row  {
     font-size: 35px;
     text-align: left;
     margin-top: 20px;
