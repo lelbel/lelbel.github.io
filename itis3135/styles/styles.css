@@ -96,7 +96,7 @@ li {
 
 .navbar > a{
     font-family: Habbo;
-    font-size: 25px;
+    font-size: 28px;
     color: #f9982f;
     text-decoration: none;
     border-style: solid;
@@ -112,7 +112,8 @@ li {
 .validators {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .validators > a > img {
