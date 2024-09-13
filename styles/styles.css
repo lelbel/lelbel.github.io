@@ -1,4 +1,4 @@
-/*-----Generic selectors-----*/
+/*-----generic selectors-----*/
 * {
     margin: 0;
 }
@@ -40,7 +40,7 @@ footer nav {
     text-align: center;
 }
 
-/*-----Fonts-----*/
+/*-----fonts-----*/
 @font-face {
     font-family: Roboto;
     src: url(../fonts/Roboto-Regular.ttf);
@@ -56,7 +56,7 @@ footer nav {
     src: url(../fonts/Roboto-Bold.ttf);
 }
 
-/*-----Navigation Bar-----*/
+/*-----navigation bar-----*/
 .navbar {
     overflow: hidden;
     position: fixed;
@@ -101,7 +101,7 @@ footer nav {
     float: left;
 }
 
-/*-----Introduction section selectors-----*/
+/*-----introduction section selectors-----*/
 .intro {
     position: relative;
     width: 100%;
@@ -128,7 +128,7 @@ footer nav {
     max-width: 900px; /*controls how much text will take up space in square when window is resized*/
 }
 
-/*-----Portfolio section selectors-----*/
+/*-----portfolio section selectors-----*/
 .projects-title {
     margin: 40px 12vw;
     text-align: left;
@@ -177,7 +177,7 @@ footer nav {
     margin-bottom: 20px;
 }
 
-/*-----Resume selectors-----*/
+/*-----resume selectors-----*/
 .resume-display {
     margin-top: 65px; /*height of the nav box (keeps from overlapping)*/
 }
