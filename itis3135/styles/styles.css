@@ -25,6 +25,7 @@ h1 {
     font-family: Habbo;
     font-weight: 400;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 h2 {
@@ -45,7 +46,7 @@ hr {
     background-color: #254252;
     border: none;
     height: 2px;
-    width: 50%;
+    width: 65%;
 
 }
 
@@ -58,6 +59,23 @@ a {
 
 footer > p {
     text-align: center;
+}
+
+figure {
+    text-align: center;
+}
+
+figcaption {
+    margin: 10px;
+}
+
+ul {
+    width: 900px;
+}
+
+li {
+    text-align: left;
+    padding: 8px;
 }
 
 /*-----fonts-----*/
@@ -73,6 +91,7 @@ footer > p {
     height: 60px;
     align-items: center;
     justify-content: center;
+    margin: 20px auto;
 }
 
 .navbar > a{
@@ -113,5 +132,10 @@ footer > p {
 }
 
 .title {
-    margin-top: 40px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.meeting-steve {
+    width: 30%;
 }
