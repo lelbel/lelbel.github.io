@@ -124,7 +124,8 @@ li {
 
 .info {
     text-align: left;
-    max-width: 600px;
+    line-height: 25px;
+    max-width: 900px;
 }
 
 .footer-links {
@@ -139,4 +140,8 @@ li {
 
 .meeting-steve {
     width: 30%;
+}
+
+.caption {
+    font-style: italic;
 }
