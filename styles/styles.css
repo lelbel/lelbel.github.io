@@ -1,28 +1,46 @@
-/*-----generic selectors-----*/
+/*-----element selectors-----*/
 * {
     margin: 0;
 }
+
 html {
     background-color: #171516; /*background color*/
     color: #f3e7e7; /*text color*/
 }
 
 body {
+    font-family: Roboto;
     text-align: left;
+}
+
+main {
+    margin: 0vh 12vw;
     font-family: Roboto-Light;
 }
 
 h1 {
-    text-align: center;
     font-size: 50px;
     font-weight: 550;
-    margin-top: 25px;
 }
 
 h2 {
+    text-align: left;
     font-size: 22px;
     font-weight: 500;
+    margin: 20px;
+}
+
+h3 {
+    font-size: 50px;
+    font-weight: 500;
+    margin: 50px 0px;
+}
+
+h4 {
+    font-size: 35px;
+    text-align: left;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 a {
@@ -36,108 +54,76 @@ hr {
     width: 100%;
 }
 
-footer nav {
+nav {
     text-align: center;
 }
 
-/*-----fonts-----*/
-@font-face {
+
+/*-----introduction section selector-----*/
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
     font-family: Roboto;
-    src: url(../fonts/Roboto-Regular.ttf);
+    height: 400px; /*replace with fixed image height*/
+    background-color: #382f32; /*placeholder color*/
+    z-index: 1;
+    margin-top: 65px; /*height of the nav box (keeps from overlapping)*/
 }
 
-@font-face {
-    font-family: Roboto-Light;
-    src: url(../fonts/Roboto-Light.ttf);
+#intro-text {
+    max-width: 900px;
+    max-height: 500px;
+    min-width: 500px;
+    text-align: center;
 }
 
-@font-face {
-    font-family: Roboto-Bold;
-    src: url(../fonts/Roboto-Bold.ttf);
-}
-
-/*-----navigation bar-----*/
-.navbar {
-    overflow: hidden;
+/*-----nav menu selectors-----*/
+#top-menu {
     position: fixed;
-    background-color: #9e3450; /*accent color*/
+    overflow: hidden;
     top: 0;
     width: 100%;
     height: 65px;
     z-index: 2;
     font-family: Roboto;
+    background-color: #9e3450; /*accent color*/
 }
 
-.navbar a{
+#bottom-menu {
+    margin: 40px;
+    color: #9e3450; /*accent color*/
+}
+
+.menu-button {
     text-align: center;
     border-style: solid;
-    color: #f3e7e7; /*text color*/
     text-decoration: none;
     margin: 11px 10px;
     padding: 10px 20px;
+    color: #f3e7e7; /*text color*/
+    background-color: #9e3450; /*accent color*/
 }
 
-.navbar a:hover {
+.menu-button:hover {
     color: #db6c8c; /*alt accent color*/
-
 }
 
-.resume-button, .projects {
+#resume-button, #projects-button {
     float: right;
 }
 
-.resume-button {
-    margin-left: 20px;
-    margin-right: 70px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.projects-button {
-    float: right;
-}
-
-.home-button {
+#home-button {
     float: left;
 }
 
-/*-----introduction section selectors-----*/
-.intro {
-    position: relative;
-    width: 100%;
-    height: 400px; /*replace with fixed image height*/
-    background-color: #382f32; /*placeholder color*/
-    color: #f3e7e7; /*placeholder color*/
-    z-index: 1;
-    font-family: Roboto;
-    margin-top: 65px; /*height of the nav box (keeps from overlapping)*/
-}
-
-.intro > img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.overlay-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -60%);
-    min-width: 400px;
-    max-width: 900px; /*controls how much text will take up space in square when window is resized*/
-}
 
 /*-----portfolio section selectors-----*/
-.projects-title {
-    margin: 40px 12vw;
-    text-align: left;
-}
-
 .column {
     display: flex;
     flex-direction: column;
-    margin: 0vh 12vw;
+    
 }
 
 .row {
@@ -163,26 +149,19 @@ footer nav {
     margin-bottom: 70px;
 }
 
-.box-top > h1 {
-    font-size: 35px;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+
+/*-----fonts-----*/
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
 }
 
-.box-top > h2 {
-    font-size: 35px;
-    text-align: left;
-    margin-top: 20px;
-    margin-bottom: 20px;
+@font-face {
+    font-family: Roboto-Light;
+    src: url(../fonts/Roboto-Light.ttf);
 }
 
-/*-----resume selectors-----*/
-.resume-display {
-    margin-top: 65px; /*height of the nav box (keeps from overlapping)*/
-}
-
-.resume-document {
-    width: 100vw;
-    height: 100vh;
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/Roboto-Bold.ttf);
 }
