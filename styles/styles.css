@@ -1,11 +1,18 @@
 /*-----element selectors-----*/
+:root {
+    --background-color: #171516;
+    --accent-color: #9e3450;
+    --text-color: #f3e7e7;
+    --alt-accent-color: #db6c8c;
+}
+
 * {
     margin: 0;
 }
 
 html {
-    background-color: #171516; /*background color*/
-    color: #f3e7e7; /*text color*/
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 body {
@@ -44,11 +51,11 @@ h4 {
 }
 
 a {
-    color: #9e3450; /*accent color*/
+    color: var(--accent-color); /*accent color*/
 }
 
 hr {
-    background-color: #9e3450; /*accent color*/
+    background-color: var(--accent-color);
     border: none;
     height: 2px;
     width: 100%;
@@ -88,12 +95,12 @@ nav {
     height: 65px;
     z-index: 2;
     font-family: Roboto;
-    background-color: #9e3450; /*accent color*/
+    background-color: var(--accent-color);
 }
 
 #bottom-menu {
     margin: 40px;
-    color: #9e3450; /*accent color*/
+    color: var(--accent-color);
 }
 
 .menu-button {
@@ -102,12 +109,12 @@ nav {
     text-decoration: none;
     margin: 11px 10px;
     padding: 10px 20px;
-    color: #f3e7e7; /*text color*/
-    background-color: #9e3450; /*accent color*/
+    color: var(--text-color);
+    background-color: var(--accent-color);
 }
 
 .menu-button:hover {
-    color: #db6c8c; /*alt accent color*/
+    color: var(--alt-accent-color)
 }
 
 #resume-button, #projects-button {

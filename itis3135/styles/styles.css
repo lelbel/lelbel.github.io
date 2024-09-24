@@ -1,7 +1,14 @@
 /*-----generic selectors-----*/
+:root {
+    --background-color: #151b2a;
+    --accent-color-1: #ef922d;
+    --accent-color-2: #254252;
+    --accent-color-1--hover: #eab56f;
+}
+
 html {
-    background-color: #151b2a;
-    color: #ef922d;
+    background-color: var(--background-color);
+    color: var(--accent-color-1);
 }
 
 body {
@@ -43,7 +50,7 @@ h3 {
 }
 
 hr {
-    background-color: #254252;
+    background-color: var(--accent-color-2);
     border: none;
     height: 2px;
     width: 65%;
@@ -53,7 +60,7 @@ hr {
 a {
     font-family: Habbo;
     font-size: 26px;
-    color: #f9982f;
+    color: var(--accent-color-1);
     margin: 5px;
 }
 
@@ -97,7 +104,7 @@ li {
 .navbar > a{
     font-family: Habbo;
     font-size: 28px;
-    color: #f9982f;
+    color: var(--accent-color-1);
     text-decoration: none;
     border-style: solid;
     padding: 10px 25px;
@@ -105,7 +112,7 @@ li {
 }
 
 .navbar > a:hover {
-    color: #eab56f;
+    color: var(--accent-color-1--hover);
 }
 
 /*-----class selectors-----*/
