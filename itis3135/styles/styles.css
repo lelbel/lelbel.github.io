@@ -2,8 +2,10 @@
 :root {
     --background-color: #151b2a;
     --accent-color-1: #ef922d;
-    --accent-color-2: #254252;
     --accent-color-1--hover: #eab56f;
+    --accent-color-2: #254252;
+    --text-width: 950px;
+    --habbo-font-weight: 400;
 }
 
 html {
@@ -22,50 +24,58 @@ main {
     align-items: center;
 }
 
-main > p:last-of-type {
-    margin-bottom: 35px;
-}
-
 h1 {
-    font-size: 60px;
-    text-align: center;
     font-family: Habbo;
-    font-weight: 400;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    text-align: center;
+    font-size: 70px;
+    font-weight: var(--habbo-font-weight);
+    margin: 20px auto;
 }
 
 h2 {
-    font-size: 50px;
-    text-align: center;
     font-family: Habbo;
-    font-weight: 400;
+    text-align: center;
+    font-size: 40px;
+    font-weight: var(--habbo-font-weight);
+    margin: 20px auto;
 }
 
 h3 {
-    font-size: 30px;
-    text-align: center;
     font-family: Habbo;
-    font-weight: 400;
+    text-align: center;
+    font-size: 60px;
+    font-weight: var(--habbo-font-weight);
+    margin: 20px auto;
+}
+
+p {
+    font-size: 20px;
+    max-width: var(--text-width);
+    line-height: 28px;
 }
 
 hr {
     background-color: var(--accent-color-2);
     border: none;
     height: 2px;
-    width: 65%;
-
+    width: 90%;
 }
 
 a {
     font-family: Habbo;
-    font-size: 26px;
+    font-size: 30px;
     color: var(--accent-color-1);
     margin: 5px;
 }
 
-footer > p {
-    text-align: center;
+ul {
+    width: var(--text-width);
+}
+
+li {
+    font-size: 20px;
+    text-align: left;
+    padding: 8px;
 }
 
 figure {
@@ -74,81 +84,57 @@ figure {
 
 figcaption {
     margin: 10px;
+    font-style: italic;
 }
 
-ul {
-    width: 900px;
-}
-
-li {
-    text-align: left;
-    padding: 8px;
+footer {
+    text-align: center;
 }
 
 /*-----fonts-----*/
 @font-face {
-    font-family: Roboto;
+    font-family: Habbo;
     src: url(../fonts/Habbo.ttf);
 }
 
 /*-----navbar-----*/
 .navbar {
     display: flex;
-    width: 100%;
-    height: 60px;
     align-items: center;
     justify-content: center;
+    width: 100%;
+    height: 60px;
     margin: 20px auto;
 }
 
-.navbar > a{
+.navbar a{
     font-family: Habbo;
-    font-size: 28px;
+    font-size: 35px;
     color: var(--accent-color-1);
     text-decoration: none;
     border-style: solid;
-    padding: 10px 25px;
+    padding: 5px 25px;
     margin: 10px;
 }
 
-.navbar > a:hover {
+.navbar a:hover {
     color: var(--accent-color-1--hover);
 }
 
-/*-----class selectors-----*/
-.validators {
-    display: flex;
-    justify-content: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
+
+/*-----id selectors-----*/
+#meeting-steve {
+    width: 35vw;
 }
 
-.validators > a > img {
-    border: 0;
-    width: 88px;
-    height: 31px;
+#validators a {
+    text-decoration: none;
 }
 
-.info {
-    text-align: left;
-    line-height: 25px;
-    max-width: 900px;
+#design-name {
+    text-decoration: none;
 }
 
-.footer-links {
-    text-align: center;
-    padding-top: 20px;
-}
-
-.title {
-    margin-top: 30px;
-    margin-bottom: 30px;
-}
-
-.meeting-steve {
-    width: 30%;
-}
-
-.caption {
-    font-style: italic;
+.footer-section {
+    margin: 30px;
 }
