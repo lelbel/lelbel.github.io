@@ -9,24 +9,19 @@
 	</head>
 
 	<body>
-		<header>
-			<nav id="top-menu">
-				<a class="menu-button" id="home-button" href="index.html">Home</a>
-				<a class="menu-button" id="resume-button" href="resume.html">Resume</a>
-				<a class="menu-button" id="projects-button" href="projects.html">Projects</a>
-			</nav>
+		<!--header-->
+		<div data-include="components/header.html"></div>
 
-			<section id="intro">
-				<section id="intro-text">
+		<main>
+			<section id="introduction">
+				<section id="introduction-text">
 					<h1>Lily Elbel</h1>
 					<h2>Hello! My name is Lily Elbel. I am currently an undergraduate student studying Computer Science at the University of North Carolina at Charlotte.</h2>
 					<h2>Below you can find different projects that I have worked on.</h2>
 					<h2>Additional work can be viewed by clicking the "Projects" button in the top right</h2>
 				</section>
 			</section>
-		</header>
 
-		<main>
 			<h3>Featured</h3>
 
 			<section class="column">
@@ -34,7 +29,7 @@
 				<section class="row">
 					<section class="box-top">
 						<video width="560" height="340" controls="controls">
-							<source src="videos/levelDownVideo.mp4" type="video/mp4">
+							<source src="videos/levelDownVideo.mp4" type="video/mp4" alt="Gameplay footage of Level Down">
 						</video>
 					</section>
 
@@ -52,13 +47,13 @@
 				<section class="row">
 					<section class="box-top">
 						<video width="560" height="340" controls="controls">
-							<source src="videos/shellShockedVideo.mp4" type="video/mp4">
+							<source src="videos/shellShockedVideo.mp4" type="video/mp4" alt="Gameplay footage of Shell Shocked">
 						</video>
 					</section>
 
 					<section class="box-top">
 						<h4>Shell Shocked</h4>
-						<p>Description of Shell Shocked</p>
+						<p>Shell Shocked is a rage-style platformer in which you play as a Hermit Crab. Dodge Umbrellas, avoid pitfalls, and outsmart Seagulls to survive. Make your way to the sand castle to win! This game was created by a team for the course Introduction to Game Design and Development.</p>
 					</section>
 
 					<section class="box-bottom">
@@ -69,15 +64,10 @@
 			</section>
 		</main>
 
-		<footer>
-			<nav id="bottom-menu">
-				<a href="itis3135/" target="_blank">ITIS3135</a>
-				<a href="https://github.com/lelbel" target="_blank">GitHub</a>
-				<a href="https://lelbel.github.io" target="_blank">GitHub.io</a>
-				<a href="https://www.linkedin.com/in/lily-elbel/" target="_blank">LinkedIn</a>
-			</nav>
-			<br>
-		</footer>
+		<!--footer-->
+		<div data-include="components/footer.html"></div>
+
+		<script src="scripts/include.js"></script>
 	</body>	
 </html>
 
