@@ -1,0 +1,63 @@
+@font-face {
+    font-family: Papyrus;
+    src: url(./papyrus.ttf);
+}
+
+@font-face {
+    font-family: Comic Sans;
+    src: url(./ComicSansMS.ttf);
+}
+
+@font-face {
+    font-family: Comic Papyrus;
+    src: url(./Comic\ Papyrus.ttf);
+}
+
+main {
+    text-align: center;
+}
+
+h1 {
+    font-family: Comic Papyrus;
+    font-size: 60px;
+    margin: 40px;
+    margin: 0px;
+    background-color: red;
+}
+
+h3 {
+    font-family: Papyrus;
+    font-size: 50px;
+}
+
+h2 {
+    font-family: Comic Sans;
+    font-size: 30px;
+    color: aqua;
+}
+
+ul {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 15px;
+    margin: 0px;
+    color: greenyellow;
+    border-style: solid;
+    border-right-width: 30px;
+    border-left-width: 8px;
+    border-top-width: 60px;
+    border-bottom-width: 4px;
+    border-right-color: pink;
+    border-left-color: red;
+    border-bottom-color: purple;
+    padding: 10px;
+}
+
+p {
+    font-size: 50px;
+    font-family: Comic Papyrus;
+    margin: 100px;
+    color: magenta;
+    text-decoration: underline;
+    background-color: aqua;
+}
