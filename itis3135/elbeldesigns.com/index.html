@@ -23,12 +23,23 @@
             }
 
             h1 {
-                font-size: 100px;
-                text-align: center;
-                letter-spacing: 15px;
+                font-size: 50px;
+                text-align: left;
+                letter-spacing: 8px;
+                margin-top: 20px;
+                margin-bottom: 20px;
             }
 
             h2 {
+                font-size: 55px;
+                text-align: center;
+                color: var(--accent-3);
+                border-style: solid;
+                padding: 25px 0px;
+                margin: 40px auto;
+            }
+
+            h3 {
                 color: var(--accent-2);
                 font-size: 40px;
                 letter-spacing: 6px;
@@ -43,6 +54,17 @@
                 width: 100%;
             }
 
+            p {
+                font-size: 20px;
+                color: var(--accent-3);
+                line-height: 28px;
+            }
+
+            li {
+                font-size: 18px;
+                line-height: 40px;
+            }
+
             .container {
                 display: flex;
                 flex-direction: column;
@@ -52,27 +74,115 @@
             .box {
                 max-width: 800px;
             }
+
+            #navbar {
+                height: 70px;
+                display: flex;
+                align-items: center;
+            }
+
+            #navbar a {
+                font-size: 20px;
+                color: var(--accent-3);
+                text-decoration: none;
+                border-style: solid;
+                padding: 6px 25px;
+                margin: 10px 10px;
+            }
+
+            #navbar a:hover {
+                color: var(--accent-1);
+            }
+
+            #footer {
+                text-align: center;
+                height: 30px;
+                margin-top: 15px;
+            }
+
+            #footer a {
+                color: var(--accent-3);
+                margin: 6px;
+            }
+
+            #title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 30px;
+            }
+
+            #cursor-icon {
+                width: 50px;
+                height: 50px;
+                margin: auto 5px;
+            }
+
+            #home {
+                float: right;
+            }
+
+            #title-hr {
+                background-color: var(--accent-3);
+            }
+
         </style>
     </head>
 
     <body>
-        <h1>Elbel Designs</h1>
-
-        <section class="container">
-            <section class="box">
-                <h2>About us</h2>
-                <hr>
-            </section>
+        <header>
             
-            <section class="box">
-                <h2>Fun Facts</h2>
-                <hr>
-            </section>
 
-            <section class="box">
-                <h2>What We Can Do For You</h2>
-                <hr>
+            <section id="title">
+                <h1>Elbel Designs</h1>
+                <img id="cursor-icon" src="./images/mouse-cursor.png" alt="Computer cursor icon">
+                <nav id="navbar">
+                    <a id="home" href="index.html">Home</a>
+                </nav>
             </section>
-        </section>
+            <hr id="title-hr">    
+            <h2>Our Services</h2>
+        </header>
+
+        <main>
+            <section class="container">
+                <section>
+                    <h3>About us</h3>
+                    <hr>
+                    <p>Elbel Designs is a small web design firm based in Charlotte, North Carolina. Our team works to provide assistance in creating quality web spaces that fufill your needs as someone who owns a website. There as a lot of reasons you may want to build a website. Here are 5 reasons you should chose Elbel Designs for the job.</p>
+                    <ul>
+                        <li>Our employees are really cool and nice</li>
+                        <li>The office we work in smells like warm cookies</li>
+                        <li>We have NEVER made a bad website</li>
+                        <li>Our project manager is always bringing snacks in to share (which is why the office always smells like cookies)</li>
+                        <li>All websites not made by us are 10% more likely to be ugly and stupid</li>
+                    </ul>
+                </section>
+                
+                <section>
+                    <h3>Fun Facts</h3>
+                    <hr>
+                    <p>Did you know that the first website we designed was for a game development company?</p>
+                </section>
+
+                <section>
+                    <h3>What We Can Do For You</h3>
+                    <hr>
+                    <p>At Elbel Designs, we want to the website that is perfect for you. Our small team is designed to build a digital space that perfectly fits your needs. Working with us gives you the ability to...</p>
+                    <ul>
+                        <li>Meet with a project manager and discuss the purpose of your site</li>
+                        <li>View a variety of visual and structural concepts for your webpage</li>
+                        <li>Recieve prototypes during development, and send feedback to the design team directly</li>
+                    </ul>
+                    <p>If you want the best website ever, or if you have any additional questions, send an email to elbeldesigns@gmail.com.</p>
+                </section>
+            </section>
+        </main>
+
+        <footer>
+            <nav id="footer">
+            </nav>
+        </footer>
     </body>
 </html>
