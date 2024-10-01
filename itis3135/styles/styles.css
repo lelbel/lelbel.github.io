@@ -94,7 +94,7 @@ footer {
 /*-----fonts-----*/
 @font-face {
     font-family: Habbo;
-    src: url(../fonts/Habbo.ttf);
+    src: url(../styles/fonts/Habbo.ttf);
 }
 
 /*-----navbar-----*/
