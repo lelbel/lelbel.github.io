@@ -2,8 +2,12 @@
 :root {
     --background-color: #151b2a;
     --accent-color-1: #ef922d;
-    --accent-color-1--hover: #eab56f;
-    --accent-color-2: #254252;
+    --accent-color-2: #ead16f;
+    --accent-color-3: #ffbb00;
+    --hover-color-2: #fcefba;
+    --row-headings: #171718;
+    --row-color-1: #1f283b;
+    --row-color-2: #181b25;
     --text-width: 950px;
     --habbo-font-weight: 400;
 }
@@ -27,29 +31,32 @@ main {
 h1 {
     font-family: Habbo;
     text-align: center;
-    font-size: 70px;
+    font-size: 60px;
     font-weight: var(--habbo-font-weight);
     margin: 20px auto;
+    color: var(--accent-color-3);
 }
 
 h2 {
     font-family: Habbo;
     text-align: center;
+    font-size: 70px;
+    font-weight: var(--habbo-font-weight);
+    margin: 20px auto;
+    color: var(--accent-color-3);
+}
+
+h3 {  
+    font-family: Habbo;
+    text-align: center;
     font-size: 40px;
     font-weight: var(--habbo-font-weight);
     margin: 20px auto;
-}
-
-h3 {
-    font-family: Habbo;
-    text-align: center;
-    font-size: 60px;
-    font-weight: var(--habbo-font-weight);
-    margin: 20px auto;
+    color: var(--accent-color-3);
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
     max-width: var(--text-width);
     line-height: 28px;
 }
@@ -73,7 +80,7 @@ ul {
 }
 
 li {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     padding: 8px;
 }
@@ -89,6 +96,32 @@ figcaption {
 
 footer {
     text-align: center;
+}
+
+table, tr, th, td {
+    border: 1px solid var(--accent-color-2);
+    border-collapse: collapse;
+    padding: 5px;
+}
+
+input {
+    margin: 15px;
+    border: 1px solid var(--accent-color-1);
+    background-color: transparent;
+    color: white;
+    padding: 6px;
+}
+
+.table-row:first-child{
+    background-color: var(--row-headings);
+}
+
+.table-row:nth-of-type(even):not(:first-child) {
+    background-color: var(--row-color-1);
+}
+
+.table-row:nth-of-type(odd):not(:first-child) {
+    background-color: var(--row-color-2);
 }
 
 /*-----fonts-----*/
@@ -110,15 +143,16 @@ footer {
 .navbar a{
     font-family: Habbo;
     font-size: 35px;
-    color: var(--accent-color-1);
+    color: var(--accent-color-2);
     text-decoration: none;
     border-style: solid;
     padding: 6px 25px;
     margin: 5px 10px;
+    padding-bottom: 10px;
 }
 
 .navbar a:hover {
-    color: var(--accent-color-1--hover);
+    color: var(--hover-color-2);   
 }
 
 /*-----id selectors-----*/
@@ -135,5 +169,11 @@ footer {
 }
 
 .footer-section {
-    margin: 30px;
+    margin: 10px;
+    color: var(--accent-color-3);   
+}
+
+.link {
+    color: var(--accent-color-3);   
+    text-decoration: none;
 }
