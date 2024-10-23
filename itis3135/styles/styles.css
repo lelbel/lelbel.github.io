@@ -63,18 +63,16 @@ p {
     line-height: 28px;
 }
 
+a {
+    color: var(--accent-color-3);
+    margin: 5px;
+}
+
 hr {
     background-color: var(--accent-color-2);
     border: none;
     height: 2px;
     width: 90%;
-}
-
-a {
-    font-family: Habbo;
-    font-size: 30px;
-    color: var(--accent-color-1);
-    margin: 5px;
 }
 
 ul {
@@ -114,15 +112,60 @@ input {
     padding: 6px;
 }
 
-main a {
+p a {
     font-family: Tahoma, sans-serif;
+    color: var(--accent-color-1);
     font-size: var(--text-size);
 }
 
-main a:hover {
+p a:hover {
     color: var(--hover-color-1);
 }
 
+/*-----nav-----*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 40px;
+    margin: 20px auto;
+}
+
+nav a{
+    font-family: Habbo;
+    font-size: 32px;
+    color: var(--accent-color-2);
+    text-decoration: none;
+    border-style: solid;
+    padding: 6px 25px;
+    margin: 5px 10px;
+    padding-bottom: 10px;
+}
+
+nav a:hover {
+    color: var(--hover-color-2);   
+}
+
+/*-----footer-----*/
+footer a {
+    font-family: Habbo;
+    color: var(--accent-color-1);
+    font-family: Habbo;
+    font-size: 30px;
+    margin: 5px;
+    text-decoration: none;
+}
+
+footer img{
+    margin: 15px 5px;
+}
+
+footer nav a {
+    color: var(--accent-color-2);
+}
+
+/*-----table-----*/
 .table-row:first-child{
     background-color: var(--row-headings);
 }
@@ -141,54 +184,7 @@ main a:hover {
     src: url(../styles/fonts/Habbo.ttf);
 }
 
-/*-----navbar-----*/
-.navbar {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    height: 40px;
-    margin: 20px auto;
-}
-
-.navbar a{
-    font-family: Habbo;
-    font-size: 32px;
-    color: var(--accent-color-2);
-    text-decoration: none;
-    border-style: solid;
-    padding: 6px 25px;
-    margin: 5px 10px;
-    padding-bottom: 10px;
-}
-
-.navbar a:hover {
-    color: var(--hover-color-2);   
-}
-
 /*-----id selectors-----*/
 #meeting-steve {
     width: 35vw;
-}
-
-#validators a {
-    text-decoration: none;
-}
-
-#design-name {
-    text-decoration: none;
-}
-
-.footer-section {
-    margin: 10px;
-    color: var(--accent-color-3);   
-}
-
-.footer-section a:hover {
-    text-decoration: underline;
-}
-
-.link {
-    color: var(--accent-color-3);   
-    text-decoration: none;
 }
