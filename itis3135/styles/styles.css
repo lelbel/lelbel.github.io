@@ -13,20 +13,81 @@
     --habbo-font-weight: 400;
 }
 
-/*-----generic selectors-----*/
-html {
-    background-color: var(--background-color);
-    color: var(--accent-color-1);
-    max-width: 1200px;
-    width: 90%;
-    margin: 0 auto;
+/*-----mobile device media query-----*/
+@media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+    #colorbox {
+        background-color:red;
+    }
+
+    :root {
+        font-size: 12;
+    }
+
+    main {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    header {
+        font-size: 0.5rem;
+    }
+
+    footer nav a {
+        text-decoration: underline;
+    }
 }
 
+/*-----tablet media query-----*/
+@media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+    #colorbox {
+        background-color:orange;
+    }
+
+    :root {
+        font-size: 12;
+    }
+
+    main {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    footer nav a{
+        text-decoration: underline;
+    }
+}
+
+/*-----laptop/small screen media query-----*/
+@media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+    #colorbox {
+        background-color:yellow;
+    }
+
+    :root {
+        font-size: 12;
+    }
+
+    main {
+        width: 95%;
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+}
+
+/*-----generic selectors-----*/
 body {
+    background-color: var(--background-color);
+    color: var(--accent-color-1);
     font-family: Tahoma, sans-serif;
 }
 
 main {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -130,10 +191,12 @@ p a:hover {
 /*-----nav-----*/
 nav {
     display: flex;
+    flex-flow: row wrap;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 40px;
+    height: auto;
     margin: 20px auto;
 }
 
@@ -190,5 +253,6 @@ footer img{
 
 /*-----id selectors-----*/
 #meeting-steve {
-    width: 35vw;
+    width: 75%;
+    height: auto;
 }
