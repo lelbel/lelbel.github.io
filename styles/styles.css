@@ -6,10 +6,6 @@
     --alt-accent-color: #db6c8c;
 }
 
-* {
-    margin: 0;
-}
-
 html {
     background-color: var(--background-color);
     color: var(--text-color);
