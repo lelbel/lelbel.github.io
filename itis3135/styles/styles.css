@@ -36,6 +36,12 @@
     footer nav a {
         text-decoration: underline;
     }
+
+    input {
+        width: 70%;
+    }
+
+    
 }
 
 /*-----tablet media query-----*/
@@ -117,7 +123,7 @@ h3 {
     text-align: center;
     font-size: 2.5rem;
     font-weight: var(--habbo-font-weight);
-    margin: 20px auto;
+    margin: 10px auto;
     color: var(--accent-color-3);
 }
 
@@ -158,6 +164,14 @@ figure {
 figcaption {
     margin: 10px;
     font-style: italic;
+}
+
+label {
+    font-size: 1.2rem;
+}
+
+button {
+    font-size: 1.01rem;
 }
 
 footer {

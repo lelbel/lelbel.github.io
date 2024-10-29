@@ -9,6 +9,9 @@ const submitSale = document.getElementById("submit-sale");
 const saleText = document.getElementById("sale-text");
 const gameRec = document.getElementById("game-rec");
 const gameRecText = document.getElementById("game-rec-text");
+const submitAge = document.getElementById("submit-age");
+const ageText = document.getElementById("age-text");
+
 
 /*
 //check if script is running
@@ -106,4 +109,45 @@ gameRec.onclick = (function gameRec() {
     const gameRecs = ["Psychonauts", "Alan Wake II", "Silent Hill 2", "Half-Life 2", "Portal", "Borderlands", "Slay the Princess", "Undertale", "Cult of the Lamb", "Hollow Knight"];
     
     gameRecText.innerHTML = `Try playing ${gameRecs[Math.floor(Math.random() * gameRecs.length)]}!`;
+});
+
+submitAge.onclick = (function ageRating() {
+    const age = Math.round(Math.abs(Number(document.getElementById("age").value)));
+    let text;
+
+    if (age > 0 && age < 10) {
+        text = "You can only play games that are rated E (Everyone)";
+    } else if (age >= 10 && age < 13) {
+        text = "You can play games that are rate E10+ (Everyone 10 and up) and below";
+    } else if (age >= 13 && age < 17) {
+        text = "You can play games that are rate T (Teen) and below";
+    } else if (age === 18) {
+        text = "You can play games that are rate M (Mature 17+) and below";
+    } else if (age > 18) {
+        text = "You can play games of any rating";
+    }
+
+    ageText.innerHTML = text;
+});
+
+//game selector
+const gameTitle = document.getElementById("game-title");
+const submitTitle = document.getElementById("submit-title");
+const submittedGames = document.getElementById("submitted-games");
+const chosenGame = document.getElementById("chosen-game");
+const clearTitles = document.getElementById("clear-titles");
+
+let gameTitles = [];
+
+submitTitle.onclick = (function submitTitle() {
+    if (gameTitle.value !== "") {
+        gameTitles.push(gameTitle.value);
+        submittedGames.innerHTML = `Current List: ${gameTitles}`;
+        console.log(gameTitles);
+    }
+});
+
+clearTitles.onclick = (function clearTitles() {
+    gameTitles = [];
+    submittedGames.innerHTML = "";
 });

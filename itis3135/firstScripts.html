@@ -14,57 +14,69 @@
             <div data-include="components/header.html"></div>
             
             <h2>First Scripts</h2>
+
+            <!--date text-->
             <h3 id="date"></h3>
+            <br>
 
             <!--mood message-->
-            <section>
-                <label for="username">What's your name?</label>
-                <input id="username" type="text" name="username" required>
+            <label for="username">What's your name?</label>
+            <input id="username" type="text" name="username" required>
 
-                <label for="mood">How are you feeling?</label>
-                <input id="mood" type="text" name="mood" required>
+            <label for="mood">How are you feeling?</label>
+            <input id="mood" type="text" name="mood" required>
 
-                <button id="submit-mood" type="submit">Submit</button>
-            </section>
+            <button id="submit-mood" type="submit">Submit</button>
 
             <p id="mood-message"></p>
 
             <!--favorite number-->
-            <section>
-                <label for="favnum">What is your favorite number (0-10)?</label>
-                <input id="favnum" type="number" name="favnum" required>
+            <label for="favnum">What is your favorite number (0-10)?</label>
+            <input id="favnum" type="number" name="favnum" required>
 
-                <button id="submit-favnum" type="submit">Submit</button>
-            </section>
-
+            <button id="submit-favnum" type="submit">Submit</button>
             <p id="favnum-message"></p>
 
             <!--functions-->
-
             <!--sale price-->
-            <section>
-                <h3>Calculate the Price of a Game on Sale</h3>
+            <h3>Calculate the Price of a Game on Sale</h3>
 
-                <label for="game-price">Game Price</label>
-                <input id="game-price" type="text" name="sale-price" placeholder="9.99" required>
+            <label for="game-price">Game Price</label>
+            <input id="game-price" type="text" name="sale-price" placeholder="9.99" required>
 
-                <label for="sale">Sale %</label>
-                <input id="sale" type="text" name="sale" placeholder="60" required>
+            <label for="sale">Sale %</label>
+            <input id="sale" type="text" name="sale" placeholder="60" required>
 
-                <button id="submit-sale" type="submit">Submit</button>
-            </section>
-
+            <button id="submit-sale" type="submit">Submit</button>
             <p id="sale-text"></p>
 
             <!--game reccomendation-->
+            <h3>Get a Game Recommendation</h3>
+            <button id="game-rec">Click Here!</button>
+            <p id="game-rec-text"></p>
+
+            <!--game age rating-->
+            <h3>Age Rating</h3>
+            <label for="age">How old are you?</label>
+            <input id="age" type="number" name="age" required>
+            <button id="submit-age">Submit</button>
+            <p id="age-text"></p>
+
+            <h3>Game Selector</h3>
+            <p>Unsure what to play next? List the games you want to start and have one randomly pick one for you!</p>
+
+            <label for="game-title">Game Title: </label>
+            <input id="game-title" type="text" name="game-title" required>
+
+            <p id="submitted-games"></p>
+
+            <p id="chosen-game"></p>
+
             <section>
-                <h3>Get a Game Recommendation</h3>
-                <button id="game-rec">Click Here!</button>
-
-                <label for="game-rec" id="game-rec-text"></label>
+                <button id="submit-title">Add Game</button>
+                <button id="select-game">Select Random Game</button>
+                <button id="clear-titles">Clear Game List</button>
             </section>
-            
-
         </main>
 
         <!--footer-->
