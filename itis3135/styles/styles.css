@@ -150,6 +150,11 @@ ul {
     max-width: var(--text-width);
 }
 
+ol {
+    font-size: var(--text-size);
+    max-width: var(--text-width);
+}
+
 li {
     max-width: var(--text-width);
     text-align: left;
@@ -268,5 +273,15 @@ footer img{
 /*-----id selectors-----*/
 #meeting-steve {
     width: 75%;
+    height: auto;
+}
+
+#wireframe {
+    width: 85%;
+    height: auto;
+}
+
+#sitemap {
+    width: 85%;
     height: auto;
 }

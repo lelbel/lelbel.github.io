@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lily Elbel's Liquid Eel ---&gt; ITIS 3135 &lt;--- Client Project</title>
+    <link rel="stylesheet" href="styles/styles.css">
+	<script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <main>
+        <!--header-->
+        <div data-include="components/header.html"></div>
+
+        <h2>Client Project</h2>
+
+        <h3>Project Overview</h3>
+        <ol>
+            <li><strong>Website Description and Purpose:</strong> This website provides a detailed overview of each Airbnb location my mom manages (One Beach'in Cottage, Salt and Sand, and Loft De Vill). Each location has a printed welcome guide for the guests that includes lists of local restaurants and activities of interest. The website will additionally include a digital copy of this information that guests can access from a web browser.</li>
+            <li><strong>Intended users of the website:</strong> Individuals interested in staying within the area can explore rental location beyond the information that can be listed on the Airbnb page. Guests that are currently staying at the Airbnb can use the site to view information regarding local activities and restaurant recommendations (information which used to only exist in the form of a binder within the house itself).</li>
+            <li><strong>Overview of the content of the website:</strong> The home page will include a fun picture of the beach with a link to a list of the rental options in addition to information on the city and its surroundings. Each Airbnb will have its own page that includes overview information (such as property history, guest limit, and highlights), pictures, amenities, rules and policies, and a button that takes the user directly to the Airbnb page for the respective location. Within the header, the user can navigate back to the list of rentals or they can choose to view either restaurants or activies with local recommendations for visitors.</li>
+        </ol>
+
+        <h3>Client Information</h3>
+        <ol>
+            <li><strong>Name of the Client:</strong> Suzan Elbel</li>
+            <li><strong>Associated Organization:</strong> Airbnb</li>
+            <li><strong>Client's Valid Email Address:</strong> Waiting on my mom to send me the email she uses for Airbnb</li>
+            <li><strong>Client's Phone Number:</strong> [Private]</li>
+        </ol>
+
+        <h3>Wireframe</h3>
+        <figure>
+            <img id="wireframe" src="./images/wireframe.png" alt="Client Project Wireframe">
+            <figcaption>Client Project Wireframe</figcaption>
+        </figure>
+
+        <h3>Site Map</h3>
+        <figure>
+            <img id="sitemap" src="./images/sitemap.png" alt="Client Project Site Map">
+            <figcaption>Client Project Site Map</figcaption>
+        </figure>
+
+        <h3>Page Design</h3>
+        <table>
+            <tr>
+                <td>
+                    <ul>
+                        <li>
+                            <p><strong>Header Actions: (Included on every page of the site):</strong></p>
+                            <ul>
+                                <li>"Activities" button that navigates the user to the Activities page</li>
+                                <li>"Restaurant" button that navigates the user to the Restaurant page</li>
+                                <li>"All Rentals" button that navigates the user to the All Rentals page</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p><strong>Footer Actions: (Included on every page of the site):</strong></p>
+                            <ul>
+                                <li>"Airbnb" text that links to my mom's Airbnb profile when clicked</li>
+                                <li>"Email" text that will actual be whatever my mom's email is. Copies to the clipboard when clicked</li>
+                                <li>"Designed by" text that links to the design firm page when clicked</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name:</strong> Home</li>
+                        <li><strong>Purpose:</strong> Provide general information on the adjacent cities the Airbnbs are in.</li>
+                        <li><strong>Page Audience:</strong> People interested in finding a rental near the beach, but has not decided on one yet.</li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                                <li>Image of the beach at the top of the page with an overlaid button that takes the user to the list of rental locations when clicked</li>
+                                <li>A few paragraphs accompanied by pictures of local scenery with descriptions that talk about Carolina Beach and Wilmington ans what they have to offer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                                <li>Button overlaid on the top image will direct the user to the page</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name:</strong> Listings</li>
+                        <li><strong>Purpose:</strong> Display all of the Airbnbs that my mom currently has available so an interested viewer can look at their options</li>
+                        <li><strong>Page Audience:</strong>Someone who saw the home page and thought "staying here would be cool. let's see what kind of places are available!"</li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                                <li>3 different sections, each with the name, location, and picture of the respective listing it is representing</li>
+                                <li>3 buttons below each listing section that take the user to the respective listing page when clicked</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                                <li>Each button will take the user to the page that has all the details of whichever listing it was representing</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name: One Beach'in Cottage</strong> </li>
+                        <li><strong>Purpose:</strong></li>
+                        <li><strong>Page Audience:</strong></li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name: Salt and Sand</strong> </li>
+                        <li><strong>Purpose:</strong></li>
+                        <li><strong>Page Audience:</strong></li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name: Loft De Vill</strong> </li>
+                        <li><strong>Purpose:</strong></li>
+                        <li><strong>Page Audience:</strong></li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name: Restaurants</strong> </li>
+                        <li><strong>Purpose:</strong></li>
+                        <li><strong>Page Audience:</strong></li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <ol>
+                        <li><strong>Page Name: Activities</strong> </li>
+                        <li><strong>Purpose:</strong></li>
+                        <li><strong>Page Audience:</strong></li>
+                        <li><strong>Page Content:</strong>
+                            <ul>
+                                <li>Header + footer</li>
+                            </ul>
+                        </li>
+                        <li><strong>Is this a page where you are asking users to enter data on the page?:</strong> No</li>
+                        <li><strong>Will those data fields need any validations?:</strong> No</li>
+                        <li><strong>Will the page contain buttons or hyperlinks or drop downs?:</strong> Yes</li>
+                        <li><strong>What actions will happen in the page?</strong>
+                            <ul>
+                                <li>Header and footer actions</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </td>
+            </tr>
+        </table>
+
+        <h3>Dynamic Functionality on the Website</h3>
+        <ul>
+            <li>describe dynamic Functionality to implement</li>
+            <li>what page it will be implemented on</li>
+            <li>URL for examples of that interactivity</li>
+        </ul>
+
+    </main>
+
+    <footer>
+        <!--footer-->
+        <div data-include="components/footer.html"></div>
+        
+        <script src="scripts/include.js"></script>
+    </footer>
+</body>
+</html>
