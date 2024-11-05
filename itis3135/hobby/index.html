@@ -7,6 +7,80 @@
     <script src="https://lint.page/kit/4d0fe3.js" crossorigin="anonymous"></script>
 
     <style>
+        /*-----mobile device media query-----*/
+        @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
+            #colorbox {
+                background-color:red;
+            }
+
+            :root {
+                font-size: 12;
+            }
+
+            main {
+                box-sizing: border-box;
+                width: 95%;
+                margin: 0 auto;
+                max-width: 1200px;
+                padding: 10px;
+            }
+
+            section {
+                box-sizing: border-box;
+                width: 95%;
+            }
+
+            section section {
+                box-sizing: border-box;
+                width: 95%;
+            }
+
+            iframe {
+                width: 100%;
+                height:100%;
+            }
+        }
+
+        /*-----tablet media query-----*/
+        @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
+            #colorbox {
+                background-color:orange;
+            }
+
+            :root {
+                font-size: 12;
+            }
+
+            main {
+                width: 95%;
+                margin: 0 auto;
+                max-width: 1200px;
+            }
+
+            iframe {
+                width: 100%;
+                height:100%;
+            }
+
+        }
+
+        /*-----laptop/small screen media query-----*/
+        @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
+            #colorbox {
+                background-color:yellow;
+            }
+
+            :root {
+                font-size: 12;
+            }
+
+            main {
+                width: 95%;
+                margin: 0 auto;
+                max-width: 1200px;
+            }
+        }
+
         body {
             font-family: Roboto, sans-serif;
             background-color: #121212;
@@ -20,7 +94,6 @@
             font-family: Roboto;
             background-color: #1f1b20;
             padding-top: 20px;
-            padding-bottom: 0;
             text-align: center;
             font-size: 2em;
             color: #d1bee9;
@@ -31,7 +104,7 @@
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            margin: 0 auto;
+            margin: 30px auto;
         }
 
         section {
@@ -42,6 +115,7 @@
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
             align-items: center;
             padding: 10px 40px;
+            width: 90%;
         }
 
         section section {
@@ -49,6 +123,13 @@
             background-color: #1f1b20;
             padding: 10px 40px;
             margin: 50px auto;
+            width: 90%;
+        }
+
+        h1 {
+            margin-left: 25px;
+            margin-right: 25px;
+            margin-bottom: 60px;
         }
 
         h2 {
@@ -59,6 +140,12 @@
         h3 {
             font-size: 2em;
             color: #d1bee9;
+        }
+
+        h4 {
+            font-family: Roboto;
+            text-align: center;
+            font-size: 2.2rem
         }
 
         a {
@@ -83,13 +170,14 @@
 
         ul li {
             line-height: 40px;
+            font-size: 1.3rem;
         }
 
         header nav {
             background-color: #333333;
             display: flex;
             box-sizing: border-box;
-            gap: 5.5rem;
+            gap: 1rem 5.5rem;
             justify-content: center;
             padding: 10px;
             font-size: 1rem;
@@ -114,13 +202,26 @@
             margin-right: 7vw;
         }
 
+        figure {
+            margin: 20px auto;
+            box-sizing: border-box;
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 5px auto;
+        }
+
         iframe {
             display: block;
             margin: 20px auto;
         }
 
         table {
-            margin: 0 auto;
+            margin: 30px auto;
+            font-size: 1.3rem;
         }
 
         th {
@@ -136,6 +237,11 @@
             padding: 10px;
             text-align: center;
             color: #bb86fc;
+        }
+
+        img {
+            display: block;
+            margin: 20px auto;
         }
 
         /*-----fonts-----*/
@@ -184,19 +290,19 @@
             <section>
                 <h3>Silent Hill 2 (2024)</h3>
                 <p>8.5/10 Gamer Points</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/M_WNxWctGsk?si=ekhb1dwLQa79gjqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/M_WNxWctGsk?si=ekhb1dwLQa79gjqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Silent Hill 2 Trailer"></iframe>
             </section>
 
             <section>
                 <h3>Alan Wake II</h3>
                 <p>9/10 Gamer Points</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/XzM6g2Jl3_8?si=DoDanz_DoPgKu9FK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/XzM6g2Jl3_8?si=DoDanz_DoPgKu9FK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Alan Wake II Trailer"></iframe>
             </section>
 
             <section>
                 <h3>Grim Fandango</h3>
                 <p>8/10 Gamer Points</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/QRB6Likh478?si=cW0AJfGMYgXtcHJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/QRB6Likh478?si=cW0AJfGMYgXtcHJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Grim Fandango Trailer"></iframe>
             </section>
         </section>
 
@@ -213,11 +319,14 @@
                 <button>Submit</button>
                 <p>Your feedback is appreciated. Thank you!</p>
             </section>
-
         </section>
 
         <section id="release-schedule">
             <h2>Game Release Schedule</h2>
+            <section>
+                <p>This is where schedule things are wowie click to view trailers</p>
+            </section>
+
             <section>
                 <table border="1">
                     <tr>
@@ -226,29 +335,70 @@
                         <th>Release Date</th>
                     </tr>
                     <tr>
-                        <td>Life Is Strange: Double Exposure</td>
+                        <td><a href="#life-is-strange">Life Is Strange: Double Exposure</a></td>
                         <td>(PS5, PS4, XSX|S, XBO, PC)</td>
                         <td>October 29, 2024</td>
                     </tr>
                     <tr>
-                        <td>Dragon Age: The Veilguard</td>
+                        <td><a href="#dragon-age">Dragon Age: The Veilguard</a></td>
                         <td>(PS5, XSX|S, PC)</td>
                         <td>October 31, 2024</td>
                     </tr>
                     <tr>
-                        <td>Indiana Jones and the Great Circle</td>
+                        <td><a href="#indiana-jones">Indiana Jones and the Great Circle</a></td>
                         <td>(XSX|S, PC)</td>
                         <td>December 9, 2024</td>
                     </tr>
                 </table>
             </section>
 
+            <section id="life-is-strange">
+                <h3>Life Is Strange: Double Exposure</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TOYz4NCFIXg?si=wPNb7jL0aMduvVtd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Life is Strange: Double Exposure Trailer"></iframe>
+            </section>
+
+            <section id="dragon-age">
+                <h3>Dragon Age: The Veilguard</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/NdtmtuzICOI?si=LTR8yIcf0Z4lPds6" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Dragon Age: The Veilguard Trailer "></iframe>
+            </section>
+
+            <section id="indiana-jones" >
+                <h3>Indiana Jones and the Great Circle</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0e17p2IVDUU?si=0L5xibZJkGk-PR-f" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen alt="Indiana Jones and the Great Circle Trailer"></iframe>
+            </section>
         </section>
 
         <section id="best-locations">
             <h2>Best Virtual Locations</h2>
-            <p>Welcome to our guide to the best locations in video games! From the hauntingly beautiful streets of Raccoon City to the vibrant, bustling world of Night City, we’ve curated a list of must-visit virtual destinations that every gamer should experience. Whether you're in search of breathtaking landscapes, rich lore, or action-packed adventures, these top locations offer something truly extraordinary. Dive in and explore the iconic settings that make gaming an unforgettable journey</p>
+            <section>
+                <p>Welcome to our guide to the best locations in video games! From the hauntingly beautiful streets of Raccoon City to the vibrant, bustling world of Night City, we have curated a list of must-visit virtual destinations that every gamer should experience. Whether you're in search of breathtaking landscapes, rich lore, or action-packed adventures, these top locations offer something truly extraordinary. Dive in and explore the iconic settings that make gaming an unforgettable journey</p>
+            </section>
+            
+            <h4>-- November 2024 --</h4>
+            <section>
+                <h3>Questionable Area - Psychonauts 2</h3>
+                <p>QA Psychonauts 2 info info</p>
+
+                <figure>
+                    <img src="./images/questionableArea1.png" alt="Picture of the Questionable Area from Psychonauts 2">
+                    <img src="./images/questionableArea2.png" alt="Picture of the Questionable Area from Psychonauts 2">
+                    <figcaption>Pictures of the Questionable Area from Psychonauts 2</figcaption>
+                </figure>
+            </section>
+        
+            <h4>-- October 2024 --</h4>
+            <section>
+                <h3>The Dark Place - Alan Wake 2</h3>
+                <p>spooky month</p>
+
+                <figure>
+                    <img src="./images/darkPlace1.jpg" alt="Picture of The Dark Place from Alan Wake II">
+                    <img src="./images/darkPlace2.jpg" alt="Picture of The Dark Place from Alan Wake II">
+                    <figcaption>Pictures of The Dark Place from Alan Wake II</figcaption>
+                </figure>
+            </section>
         </section>
+
 
         <section id="how">
             <h2>How Reviews are Written</h2>
@@ -260,24 +410,32 @@
 
         <section id="why">
             <h2>Why?</h2>
-            <p>At Game Review Hub, we write game reviews because we believe in the transformative power of gaming. Our mission is to guide gamers through the vast landscape of video games, helping them discover experiences that resonate, entertain, and challenge. Through our reviews, we strive to foster a deeper appreciation for the art of game design and support the gaming community with trustworthy, passionate insights.</p>
+            <section>
+                <p>At Game Review Hub, we write game reviews because we believe in the transformative power of gaming. Our mission is to guide gamers through the vast landscape of video games, helping them discover experiences that resonate, entertain, and challenge. Through our reviews, we strive to foster a deeper appreciation for the art of game design and support the gaming community with trustworthy, passionate insights.</p>
+            </section>
+            <figure>
+                <img src="./images/pieChart.png" alt="Pie chart showing how this website affects happiness among gamers">
+                <figcaption>Pie Chart Showing How This Website Affects Happiness Among Gamers</figcaption>
+            </figure>
         </section>
 
         <section id="ai-prompts">
             <h2>AI Prompts</h2>
 
-            <ul>
-                <li>"Create a style element for a video game review website"</li>
-                <li>"How would I hide all sections of a page except for the one I click on?"</li>
-                <li>"How do you get the id of an element that has been clicked on in js?"</li>
-                <li>"I have js code that shows ceretain sections and hides others. However, it is hiding sections nested within the shown section. Can i fix that?"</li>
-                <li>"How can I make it so the home page is the first to load when a user navigates to this site? Currently, all pages are shown until one is initially picked"</li>
-                <li>"Write a brief "about" section for a game design review website"</li>
-                <li>"Create a simple html table with a 4 columns"</li>
-                <li>"Write a small paragraph about how games are reviewed based on a point system called "gamer points""</li>
-                <li>"Write a short paragraph about why this company writes game reviews"</li>
-                <li>"Write a short paragraph for a page that lists the best locations in video games"</li>
-            </ul>
+            <section>
+                <ul>
+                    <li>"Create a style element for a video game review website" Note: The original style element that was generated has been heavily altered to better fit the page's purpose.</li>
+                    <li>"How would I hide all sections of a page except for the one I click on?"</li>
+                    <li>"How do you get the id of an element that has been clicked on in js?"</li>
+                    <li>"I have js code that shows ceretain sections and hides others. However, it is hiding sections nested within the shown section. Can i fix that?"</li>
+                    <li>"How can I make it so the home page is the first to load when a user navigates to this site? Currently, all pages are shown until one is initially picked."</li>
+                    <li>"Create a simple html table with a 4 columns"</li>
+                    <li>"(REMOVE) Write a small paragraph about how games are reviewed based on a point system called "gamer points""</li>
+                    <li>"(REMOVE) Write a short paragraph about why this company writes game reviews"</li>
+                    <li>"(REMOVE) Write a short paragraph for a page that lists the best locations in video games"</li>
+                    <li>"(REMOVE) Write a brief "about" section for a game design review website"</li>
+                </ul>
+            </section>
         </section>
     </main>
 
@@ -286,7 +444,7 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var targetSection = document.getElementById('home');
+                var targetSection = document.getElementById('ai-prompts');
                 document.querySelectorAll('main > section').forEach(function(section) {
                     if (section !== targetSection) {
                         section.style.display = 'none';
