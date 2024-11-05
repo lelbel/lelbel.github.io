@@ -1,0 +1,39 @@
+Home
+- change welcome text to a description of my hobby
+- add quick overview of game and rating
+- add alt text for videos
+
+About
+- replace text
+- center form (add email input for news letter)
+- add image (with alt text)
+
+Game Release Schedule
+- add text explaining what the section is
+- fix whatever is going on with the section spacing
+- add another column with a "view trailer" button
+- have table link to sections below with trailers in them
+
+Best Virtual Locations
+- best virtual location of the month: october + november
+- replace placeholder text
+- add images and description of each location
+- put into into sub sections
+
+How Reviews are Written
+- explain the "gamer points" system
+- make a step-by-step diagram of reviewing (silly)
+
+Why
+- replace text
+- add a pie chart of some kind
+- another element
+
+AI Prompts
+- create section of placeholders that include prompts from the past that were replaced later in development
+
+NOTES
+- all images need figcaptions
+- fix nav bar 
+- set max width
+- fix how sections wrap with smaller screen sizes

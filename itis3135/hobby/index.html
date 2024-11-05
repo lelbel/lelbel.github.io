@@ -9,87 +9,70 @@
     <style>
         body {
             font-family: Roboto, sans-serif;
-            background-color: #121212; /* very dark gray */
-            color: #eeeeee; /* light gray */
-            margin: 0;
+            background-color: #121212;
+            color: #eeeeee;
+            margin: 0 auto;
             padding: 0;
             box-sizing: border-box;
         }
 
         header {
             font-family: Roboto;
-            background-color: #1f1b20; /* dark gray */
-            padding: 20px 0;
+            background-color: #1f1b20;
+            padding-top: 20px;
+            padding-bottom: 0;
             text-align: center;
             font-size: 2em;
-            color: #d1bee9; /* purple */
+            color: #d1bee9;
         }
 
         main {
+            width: 90%;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 20px;
+            margin: 0 auto;
         }
 
         section {
+            box-sizing: border-box;
             margin: 20px;
-            width: 80%;
             background-color: #1f1f1f; /* dark gray */
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0,0,0,0.5);
             align-items: center;
+            padding: 10px 40px;
         }
 
         section section {
-            width: 90%;
+            box-sizing: border-box;
             background-color: #1f1b20;
-            margin: 0 auto;
+            padding: 10px 40px;
+            margin: 50px auto;
         }
 
         h2 {
             font-family: Roboto;
             font-size: 2.5rem;
-            padding-left: 40px;
         }
 
         h3 {
             font-size: 2em;
             color: #d1bee9;
-            padding-left: 40px;
-            padding-top: 40px;
-        }
-
-        h4 {
-            display: inline-block;
-            padding: 10px 15px;
-            background-color: #bb86fc; /* purple */
-            border-radius: 50px;
-            font-size: 1.2em;
-            font-weight: bold;
-            color: #1f1f1f; /* dark gray */
         }
 
         a {
-            color: #bb86fc; /* purple */
+            color: #bb86fc;
         }
 
         p {
             font-family: Roboto-Light;
             font-size: 1.3rem;
-            padding-left: 40px;
-            padding-right: 40px;
-            padding-bottom: 40px;
-
         }
 
         label {
             font-family: Roboto-Light;
             font-size: 1.3rem;
-            padding-left: 40px;
-            padding-right: 10px;
-            padding-bottom: 40px;
-
         }
 
         ul {
@@ -102,36 +85,42 @@
             line-height: 40px;
         }
 
-        nav {
-            background-color: #333333; /* slightly lighter dark gray */
-            padding: 10px;
+        header nav {
+            background-color: #333333;
             display: flex;
+            box-sizing: border-box;
             gap: 5.5rem;
             justify-content: center;
+            padding: 10px;
+            font-size: 1rem;
+            flex-wrap: wrap;
         }
 
-        nav a {
-            color: #bb86fc; /* purple */
+        header nav a {
+            color: #bb86fc;
             text-decoration: none;
             font-size: 1.2em;
         }
         
-        nav a:hover {
+        header nav a:hover {
             color: #dbc0fd;
+        }
+        
+        header nav a:first-of-type {
+            margin-left: 7vw;
+        }
+
+        header nav a:last-of-type {
+            margin-right: 7vw;
         }
 
         iframe {
             display: block;
-            margin-left: auto;
-            margin-right: auto;
+            margin: 20px auto;
         }
 
         table {
             margin: 0 auto;
-        }
-
-        br {
-            line-height: 400px;
         }
 
         th {
@@ -143,10 +132,10 @@
         }
 
         footer {
-            background-color: #1f1f1f; /* dark gray */
+            background-color: #1f1f1f;
             padding: 10px;
             text-align: center;
-            color: #bb86fc; /* purple */
+            color: #bb86fc;
         }
 
         /*-----fonts-----*/
@@ -171,19 +160,18 @@
 <body>
     <header>
         <h1>The Game Review Hub</h1>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#release-schedule">Schedule</a>
+            <a href="#best-locations">Best Locations</a>
+            <a href="#how">How Reviews are Written</a>
+            <a href="#why">Why Review?</a>
+            <a href="#ai-prompts">AI Prompts</a>
+        </nav>    
     </header>
-
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#release-schedule">Game Release Schedule</a>
-        <a href="#best-locations">Best Virtual Locations</a>
-        <a href="#how">How Reviews are Written</a>
-        <a href="#why">Why?</a>
-        <a href="#ai-prompts">AI Prompts</a>
-
-    </nav>
-
+    
     <main>
         <section id="home">
             <h2>Home</h2>
@@ -197,31 +185,24 @@
                 <h3>Silent Hill 2 (2024)</h3>
                 <p>8.5/10 Gamer Points</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/M_WNxWctGsk?si=ekhb1dwLQa79gjqH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
             </section>
-            <br>
 
             <section>
                 <h3>Alan Wake II</h3>
                 <p>9/10 Gamer Points</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/XzM6g2Jl3_8?si=DoDanz_DoPgKu9FK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
             </section>
-            <br>
 
             <section>
                 <h3>Grim Fandango</h3>
                 <p>8/10 Gamer Points</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/QRB6Likh478?si=cW0AJfGMYgXtcHJS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                <br>
             </section>
-            <br>
         </section>
 
         <section id="about">
             <h2>About</h2>
             <section>
-                <br>
                 <p>Welcome to Game Review Hub, where we blend passion and expertise to bring you honest and insightful video game reviews. Our team of dedicated gamers dives deep into every title, evaluating gameplay, graphics, storylines, and overall experience. Whether you’re a casual player or a die-hard fan, we aim to guide you through the ever-evolving world of gaming with reviews that matter. Happy gaming!</p>
             </section>
 
@@ -238,7 +219,6 @@
         <section id="release-schedule">
             <h2>Game Release Schedule</h2>
             <section>
-                <br>
                 <table border="1">
                     <tr>
                         <th>Title</th>
@@ -261,15 +241,12 @@
                         <td>December 9, 2024</td>
                     </tr>
                 </table>
-                <br>
             </section>
-            <br>
 
         </section>
 
         <section id="best-locations">
             <h2>Best Virtual Locations</h2>
-            <br>
             <p>Welcome to our guide to the best locations in video games! From the hauntingly beautiful streets of Raccoon City to the vibrant, bustling world of Night City, we’ve curated a list of must-visit virtual destinations that every gamer should experience. Whether you're in search of breathtaking landscapes, rich lore, or action-packed adventures, these top locations offer something truly extraordinary. Dive in and explore the iconic settings that make gaming an unforgettable journey</p>
         </section>
 
@@ -277,14 +254,12 @@
             <h2>How Reviews are Written</h2>
 
             <section>
-                <br>
                 <p>At Game Review Hub, we evaluate each game using our unique "Gamer Points" system. This comprehensive scoring method assesses multiple aspects of the game, including graphics, gameplay, story, and replay value. Each category is rated out of 10 Gamer Points, and the total score provides an overall rating out of 40. This approach ensures a balanced and thorough review, helping gamers make well-informed choices about their next adventure.</p>
             </section>
         </section>
 
         <section id="why">
             <h2>Why?</h2>
-            <br>
             <p>At Game Review Hub, we write game reviews because we believe in the transformative power of gaming. Our mission is to guide gamers through the vast landscape of video games, helping them discover experiences that resonate, entertain, and challenge. Through our reviews, we strive to foster a deeper appreciation for the art of game design and support the gaming community with trustworthy, passionate insights.</p>
         </section>
 
@@ -310,36 +285,30 @@
         <a href="/elbeldesigns.com/">Elbel Designs &#169;2024</a>
 
         <script>
-document.addEventListener('DOMContentLoaded', function() {
-    var targetSection = document.getElementById('home');
-    document.querySelectorAll('main > section').forEach(function(section) {
-        if (section !== targetSection) {
-            section.style.display = 'none';
-        }
-    });
-    targetSection.style.display = 'block'; // Show the home section
-});
+            document.addEventListener('DOMContentLoaded', function() {
+                var targetSection = document.getElementById('home');
+                document.querySelectorAll('main > section').forEach(function(section) {
+                    if (section !== targetSection) {
+                        section.style.display = 'none';
+                    }
+                });
+                targetSection.style.display = 'block'; // Show the home section
+            });
 
-document.querySelectorAll('nav a').forEach(function(navLink) {
-    navLink.addEventListener('click', function(event) {
-        event.preventDefault(); // Prevent default link behavior
-        var targetId = this.getAttribute('href').substring(1);
-        var targetSection = document.getElementById(targetId);
+            document.querySelectorAll('nav a').forEach(function(navLink) {
+                navLink.addEventListener('click', function(event) {
+                    event.preventDefault(); // Prevent default link behavior
+                    var targetId = this.getAttribute('href').substring(1);
+                    var targetSection = document.getElementById(targetId);
 
-        document.querySelectorAll('main > section').forEach(function(section) {
-            if (section !== targetSection) {
-                section.style.display = 'none';
-            }
-        });
-
-        targetSection.style.display = 'block'; // Show the clicked section
-    });
-});
-
-
-
-
-
+                    document.querySelectorAll('main > section').forEach(function(section) {
+                        if (section !== targetSection) {
+                            section.style.display = 'none';
+                        }
+                    });
+                    targetSection.style.display = 'block'; // Show the clicked section
+                });
+            });
         </script>
     </footer>
 </body>
