@@ -23,7 +23,6 @@ NOTES
 - check accumulus for any errors when done
 - review whole canvas page before being done
 - reset default page to home
-- fix image scaling (undo image edits)
 
 
 DONE
@@ -45,3 +44,4 @@ DONE
 - ABOUT
 - remove old placeholder prompts
 - AI PROMPTS
+- fix image scaling (undo image edits)
