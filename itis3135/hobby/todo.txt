@@ -13,16 +13,6 @@ SECTIONS THAT JUST NEED TEXT
     - replace placeholder text
     - description of each location
 
-- Home
-    - change welcome text to a description of my hobby
-    - add quick overview of game and rating
-
-- AI Prompts
-    - remove old placeholder prompts
-
-- About
-    - replace text
-
 - Why
     - replace text
 
@@ -47,3 +37,10 @@ DONE
 - have table link to sections below with trailers in them
 - center form (add email input for news letter)
 - add image (with alt text)
+- change welcome text to a description of my hobby
+- add quick overview of game and rating
+- replace text
+- HOME
+- ABOUT
+- remove old placeholder prompts
+- AI PROMPTS
