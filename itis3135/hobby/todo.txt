@@ -5,21 +5,11 @@ How Reviews are Written
 
 
 SECTIONS THAT JUST NEED TEXT
-
-- Game Release Schedule
-    - add text explaining what the section is
-
-- Best Virtual Locations
-    - replace placeholder text
-    - description of each location
-
 - Why
-    - replace text
 
 
 NOTES
 - set max width
-- fix how sections wrap with smaller screen sizes
 - check accumulus for any errors when done
 - review whole canvas page before being done
 - reset default page to home
@@ -39,9 +29,11 @@ DONE
 - add image (with alt text)
 - change welcome text to a description of my hobby
 - add quick overview of game and rating
-- replace text
 - HOME
 - ABOUT
 - remove old placeholder prompts
 - AI PROMPTS
 - fix image scaling (undo image edits)
+- Best Virtual Locations
+- GAME RELEASE SCHEDULE
+- add text explaining what the section is

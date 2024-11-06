@@ -34,11 +34,6 @@
                 box-sizing: border-box;
                 width: 95%;
             }
-
-            iframe {
-                width: 100%;
-                height:100%;
-            }
         }
 
         /*-----tablet media query-----*/
@@ -56,12 +51,6 @@
                 margin: 0 auto;
                 max-width: 1200px;
             }
-
-            iframe {
-                width: 100%;
-                height:100%;
-            }
-
         }
 
         /*-----laptop/small screen media query-----*/
@@ -97,6 +86,27 @@
             text-align: center;
             font-size: 2em;
             color: #d1bee9;
+        }
+
+        header nav {
+            background-color: #333333;
+            display: flex;
+            box-sizing: border-box;
+            gap: 1rem 4rem;
+            justify-content: center;
+            padding: 12px;
+            font-size: 1.1rem;
+            flex-wrap: wrap;
+        }
+
+        header nav a {
+            color: #bb86fc;
+            text-decoration: none;
+            font-size: 1.2em;
+        }   
+        
+        header nav a:hover {
+            color: #dbc0fd;
         }
 
         main {
@@ -148,18 +158,13 @@
             font-size: 2.2rem
         }
 
-        a {
-            color: #bb86fc;
-        }
-
         p {
             font-family: Roboto-Light;
             font-size: 1.4rem;
         }
 
-        label {
-            font-family: Roboto-Light;
-            font-size: 1.3rem;
+        a {
+            color: #bb86fc;
         }
 
         ul, ol{
@@ -173,52 +178,8 @@
             font-size: 1.3rem;
         }
 
-        header nav {
-            background-color: #333333;
-            display: flex;
-            box-sizing: border-box;
-            gap: 1rem 4rem;
-            justify-content: center;
-            padding: 12px;
-            font-size: 1.1rem;
-            flex-wrap: wrap;
-        }
-
-        header nav a {
-            color: #bb86fc;
-            text-decoration: none;
-            font-size: 1.2em;
-        }   
-        
-        header nav a:hover {
-            color: #dbc0fd;
-        }
-
-        figure {
-            margin: 40px auto;
-            box-sizing: border-box;
-        }
-
-        figcaption {
-            font-style: italic;
-            font-size: 1.2rem;
-            text-align: center;
-            margin: 5px auto;
-        }
-
-        input, select, form button {
-            margin-left: 30px;
-            margin-top: 30px;
-            margin-bottom: 30px;
-        }
-
         li input {
             margin: 5px auto;
-        }
-
-        iframe {
-            display: block;
-            margin: 20px auto;
         }
 
         table {
@@ -234,16 +195,45 @@
             padding: 10px 30px;
         }
 
+        figure {
+            margin: 40px auto;
+            box-sizing: border-box;
+        }
+
+        figcaption {
+            font-style: italic;
+            font-size: 1.2rem;
+            text-align: center;
+            margin: 5px auto;
+        }
+
         form {
             display: block;
             margin: 30px auto;
             border-style: solid;
             padding: 40px 40px;
         }
+        
+        label {
+            font-family: Roboto-Light;
+            font-size: 1.3rem;
+        }
+
+        input, select, form button {
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
 
         img {
             display: block;
             margin: 40px auto;
+            max-width: 100%;
+        }
+
+        iframe {
+            display: block;
+            margin: 20px auto;
             max-width: 100%;
         }
 
@@ -288,6 +278,7 @@
         </nav>    
     </header>
     
+
     <main>
         <section id="home">
             <h2>Home</h2>
@@ -318,6 +309,7 @@
             </section>
         </section>
 
+
         <section id="about">
             <h2>About</h2>
             <section>
@@ -344,6 +336,7 @@
                 </ol>
             </section>
         </section>
+
 
         <section id="release-schedule">
             <h2>Game Release Schedule</h2>
@@ -392,6 +385,7 @@
             </section>
         </section>
 
+
         <section id="best-locations">
             <h2>Best Virtual Locations</h2>
             <section>
@@ -401,7 +395,6 @@
             <h4>-- November 2024 --</h4>
             <section>
                 <h3>Questionable Area - Psychonauts 2</h3>
-                <p>QA Psychonauts 2 info info</p>
 
                 <figure>
                     <img src="./images/questionableArea1.png" alt="Picture of the Questionable Area from Psychonauts 2">
@@ -413,7 +406,6 @@
             <h4>-- October 2024 --</h4>
             <section>
                 <h3>The Dark Place - Alan Wake 2</h3>
-                <p>spooky month</p>
 
                 <figure>
                     <img src="./images/darkPlace1.jpg" alt="Picture of The Dark Place from Alan Wake II">
@@ -428,14 +420,15 @@
             <h2>How Reviews are Written</h2>
 
             <section>
-                <p>At Game Review Hub, we evaluate each game using our unique "Gamer Points" system. This comprehensive scoring method assesses multiple aspects of the game, including graphics, gameplay, story, and replay value. Each category is rated out of 10 Gamer Points, and the total score provides an overall rating out of 40. This approach ensures a balanced and thorough review, helping gamers make well-informed choices about their next adventure.</p>
+                <p>""</p>
             </section>
         </section>
+
 
         <section id="why">
             <h2>Why?</h2>
             <section>
-                <p>At Game Review Hub, we write game reviews because we believe in the transformative power of gaming. Our mission is to guide gamers through the vast landscape of video games, helping them discover experiences that resonate, entertain, and challenge. Through our reviews, we strive to foster a deeper appreciation for the art of game design and support the gaming community with trustworthy, passionate insights.</p>
+                <p>""</p>
             </section>
 
             <section>
@@ -507,6 +500,7 @@
             </section>
         </section>
 
+
         <section id="ai-prompts">
             <h2>AI Prompts</h2>
 
@@ -523,12 +517,13 @@
         </section>
     </main>
 
+
     <footer>
         <a href="/elbeldesigns.com/">Elbel Designs &#169;2024</a>
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var targetSection = document.getElementById('best-locations');
+                var targetSection = document.getElementById('why');
                 document.querySelectorAll('main > section').forEach(function(section) {
                     if (section !== targetSection) {
                         section.style.display = 'none';
