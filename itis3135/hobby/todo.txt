@@ -6,13 +6,11 @@ About
 How Reviews are Written
 - explain the "gamer points" system
 - make a step-by-step diagram of reviewing (silly)
+- some third thing
 
 Why
 - replace text
 - Fill in fake reviews
-
-AI Prompts
-- create section of placeholders that include prompts from the past that were replaced later in development
 
 
 SECTIONS THAT JUST NEED TEXT
@@ -26,6 +24,9 @@ SECTIONS THAT JUST NEED TEXT
 - Home
     - change welcome text to a description of my hobby
     - add quick overview of game and rating
+
+- AI Prompts
+    - remove old placeholder prompts
 
 
 NOTES

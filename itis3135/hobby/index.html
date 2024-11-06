@@ -232,16 +232,23 @@
             padding: 10px 30px;
         }
 
-        footer {
-            background-color: #1f1f1f;
-            padding: 10px;
-            text-align: center;
-            color: #bb86fc;
+        form {
+            display: block;
+            margin: 30px auto;
+            border-style: solid;
+            padding: 40px 40px;
         }
 
         img {
             display: block;
             margin: 20px auto;
+        }
+
+        footer {
+            background-color: #1f1f1f;
+            padding: 10px;
+            text-align: center;
+            color: #bb86fc;
         }
 
         /*-----fonts-----*/
@@ -314,10 +321,21 @@
 
             <section>
                 <h3>Where did you hear about us?</h3>
-                <label for="hear-about">Tell us how you found this website: </label>
-                <input type="text" id="hear-about" name="hear-about">
-                <button>Submit</button>
-                <p>Your feedback is appreciated. Thank you!</p>
+                <p>We are always looking for ways to improve. If you like what we do, consider filling out the survey below. Your feedback is appreciated. Thank you!</p>
+                <form action="">
+                    <label for="hear-about">Tell us how you found this website: </label>
+                    <input type="text" id="hear-about" name="hear-about"><br>
+
+                    <label>Are you interested in recieving updates?</label><br>
+
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="update" checked>
+                    
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="update"><br>
+                    <button>Submit</button>
+                </form>
+                
             </section>
         </section>
 
@@ -444,7 +462,7 @@
 
         <script>
             document.addEventListener('DOMContentLoaded', function() {
-                var targetSection = document.getElementById('ai-prompts');
+                var targetSection = document.getElementById('about');
                 document.querySelectorAll('main > section').forEach(function(section) {
                     if (section !== targetSection) {
                         section.style.display = 'none';
