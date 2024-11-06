@@ -1,19 +1,11 @@
-About
-- replace text
-- center form (add email input for news letter)
-- add image (with alt text)
-
 How Reviews are Written
 - explain the "gamer points" system
 - make a step-by-step diagram of reviewing (silly)
 - some third thing
 
-Why
-- replace text
-- Fill in fake reviews
-
 
 SECTIONS THAT JUST NEED TEXT
+
 - Game Release Schedule
     - add text explaining what the section is
 
@@ -28,14 +20,20 @@ SECTIONS THAT JUST NEED TEXT
 - AI Prompts
     - remove old placeholder prompts
 
+- About
+    - replace text
+
+- Why
+    - replace text
+
 
 NOTES
-- all images need figcaptions
 - set max width
 - fix how sections wrap with smaller screen sizes
 - check accumulus for any errors when done
 - review whole canvas page before being done
 - reset default page to home
+
 
 DONE
 - add alt text for videos
@@ -47,3 +45,5 @@ DONE
 - fix whatever is going on with the section spacing
 - add another column with a "view trailer" button
 - have table link to sections below with trailers in them
+- center form (add email input for news letter)
+- add image (with alt text)

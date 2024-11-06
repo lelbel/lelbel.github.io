@@ -154,7 +154,7 @@
 
         p {
             font-family: Roboto-Light;
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
 
         label {
@@ -162,13 +162,13 @@
             font-size: 1.3rem;
         }
 
-        ul {
+        ul, ol{
             font-family: Roboto-Light;
             margin: 40px;
             font-size: 1.3rem;
         }
 
-        ul li {
+        ul li, ol li {
             line-height: 40px;
             font-size: 1.3rem;
         }
@@ -179,8 +179,8 @@
             box-sizing: border-box;
             gap: 1rem 5.5rem;
             justify-content: center;
-            padding: 10px;
-            font-size: 1rem;
+            padding: 12px;
+            font-size: 1.1rem;
             flex-wrap: wrap;
         }
 
@@ -211,6 +211,16 @@
             font-style: italic;
             font-size: 1.2rem;
             text-align: center;
+            margin: 5px auto;
+        }
+
+        input, select, form button {
+            margin-left: 30px;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+
+        li input {
             margin: 5px auto;
         }
 
@@ -290,7 +300,6 @@
             <h2>Home</h2>
 
             <section>
-                <h3>Welcome</h3>
                 <p>Welcome to Game Review Hub, your go-to destination for honest, in-depth reviews on the latest video games. Whether you're a casual player or a hardcore gamer, our dedicated team of reviewers offers insightful critiques, gameplay tips, and engaging content to help you navigate the expansive world of gaming. Dive in and explore—your next favorite game is just a click away!</p>
             </section>
 
@@ -320,22 +329,23 @@
             </section>
 
             <section>
-                <h3>Where did you hear about us?</h3>
-                <p>We are always looking for ways to improve. If you like what we do, consider filling out the survey below. Your feedback is appreciated. Thank you!</p>
-                <form action="">
-                    <label for="hear-about">Tell us how you found this website: </label>
-                    <input type="text" id="hear-about" name="hear-about"><br>
+                <h3>Where the Magic Happens</h3>
+                <figure>
+                    <img src="./images/desk.png" alt="A picture of my office (the desk at my apartment)">
+                    <figcaption>My office (the desk at my apartment)</figcaption>
+                </figure>
+            </section>
 
-                    <label>Are you interested in recieving updates?</label><br>
-
-                    <label for="yes">Yes</label>
-                    <input type="radio" id="yes" name="update" checked>
-                    
-                    <label for="no">No</label>
-                    <input type="radio" id="no" name="update"><br>
-                    <button>Submit</button>
-                </form>
-                
+            <section>
+                <h3>Guide to My Workspace</h3>
+                <ol>
+                    <li>A bowl that used to have strawberry yogurt in it. There is still some yogurt left, just significantly less than before.</li>
+                    <li>Water! I do not drink enough throughout the day so I always end up chugging it while working at my desk in the evenings.</li>
+                    <li>Who's that Pokemon? Its Wooper! His smile makes the worst days better. I mean look at him.</li>
+                    <li>A small dinosaur I bought at a sale store for 2 dollars. He is supposed to light up. He does not. I love him anyways.</li>
+                    <li>An awesome website! Wow I bet whoever made it worked reaaaaally hard on making it look nice...</li>
+                    <li>My 3DS. I took it with me when I went to vote so I could stay entertained while waiting in line.</li>
+                </ol>
             </section>
         </section>
 
@@ -400,7 +410,7 @@
                 <figure>
                     <img src="./images/questionableArea1.png" alt="Picture of the Questionable Area from Psychonauts 2">
                     <img src="./images/questionableArea2.png" alt="Picture of the Questionable Area from Psychonauts 2">
-                    <figcaption>Pictures of the Questionable Area from Psychonauts 2</figcaption>
+                    <figcaption>The Questionable Area from Psychonauts 2</figcaption>
                 </figure>
             </section>
         
@@ -412,7 +422,7 @@
                 <figure>
                     <img src="./images/darkPlace1.jpg" alt="Picture of The Dark Place from Alan Wake II">
                     <img src="./images/darkPlace2.jpg" alt="Picture of The Dark Place from Alan Wake II">
-                    <figcaption>Pictures of The Dark Place from Alan Wake II</figcaption>
+                    <figcaption>The Dark Place from Alan Wake II</figcaption>
                 </figure>
             </section>
         </section>
@@ -431,10 +441,78 @@
             <section>
                 <p>At Game Review Hub, we write game reviews because we believe in the transformative power of gaming. Our mission is to guide gamers through the vast landscape of video games, helping them discover experiences that resonate, entertain, and challenge. Through our reviews, we strive to foster a deeper appreciation for the art of game design and support the gaming community with trustworthy, passionate insights.</p>
             </section>
-            <figure>
-                <img src="./images/pieChart.png" alt="Pie chart showing how this website affects happiness among gamers">
-                <figcaption>Pie Chart Showing How This Website Affects Happiness Among Gamers</figcaption>
-            </figure>
+
+            <section>
+                <h3>Important Statistic</h3>
+                <figure>
+                    <img src="./images/pieChart.png" alt="Pie chart showing how this website affects happiness among gamers">
+                    <figcaption>Pie Chart Showing How This Website Affects Happiness Among Gamers</figcaption>
+                </figure>
+            </section>
+
+            <section>
+                <h3>Feedback Survey</h3>
+                <p>We are always looking for ways to improve. If you like what we do, consider filling out the survey below. Your feedback is appreciated. Thank you!</p>
+                <form action="">
+                    <label for="dropdown">How did you hear about us?</label><br>
+                    <select name="dropdown" id="dropdown" size="1">
+                        <option value="friend">From a friend</option>
+                        <option value="site">From a site writer</option>
+                        <option value="ad">Online Ad</option>
+                        <option value="social-media">Social Media</option>
+                        <option value="word">Word of mouth</option>
+                        <option value="from-other">Other</option>
+                    </select><br>
+
+                    <label for="specify-other">If you chose "other," please specify: </label><br>
+                    <input type="text" id="specify-other" name="specify-other"><br>
+
+                    <label>What kind of content are you most intersted in seeing? (Select all that apply)</label><br>
+
+                    <ul>
+                        <li>
+                            <label for="game-reviews">Game Reviews</label>
+                            <input type="checkbox" id="game-reviews" name="content-type"><br>
+                        </li>
+                        <li>
+                            <label for="game-reviews">Game Reviews</label>
+                            <input type="checkbox" id="game-reviews" name="content-type"><br>
+                        </li>
+                        <li>
+                            <label for="location-month">Location of the Month</label>
+                            <input type="checkbox" id="location-month" name="content-type"><br>
+                        </li>
+                        <li>
+                            <label for="tier-lists">Tier Lists</label>
+                            <input type="checkbox" id="tier-lists" name="content-type"><br>
+                        </li>
+                        <li>
+                            <label for="interviews">Interviews</label>
+                            <input type="checkbox" id="interviews" name="content-type"><br>
+                        </li>
+                        <li>
+                            <label for="bts">Behind the Scenes</label>
+                            <input type="checkbox" id="bts" name="content-type"><br>
+                        </li>
+                        <li>
+                            <label for="check-other">Other</label>
+                        <input type="checkbox" id="check-other" name="content-type"><br>
+                        </li>
+                    </ul>
+
+                    <label>Are you interested in recieving updates?</label><br>
+
+                    <label for="yes">Yes</label>
+                    <input type="radio" id="yes" name="update" checked>
+                    
+                    <label for="no">No</label>
+                    <input type="radio" id="no" name="update"><br>
+
+                    <input type="reset" id="reset" name="reset"><br>
+                    
+                    <button>Submit</button>
+                </form>
+            </section>
         </section>
 
         <section id="ai-prompts">
