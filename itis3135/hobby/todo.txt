@@ -4,10 +4,6 @@ How Reviews are Written
 - some third thing
 
 
-SECTIONS THAT JUST NEED TEXT
-- Why
-
-
 NOTES
 - set max width
 - check accumulus for any errors when done
@@ -37,3 +33,4 @@ DONE
 - Best Virtual Locations
 - GAME RELEASE SCHEDULE
 - add text explaining what the section is
+- WHY
