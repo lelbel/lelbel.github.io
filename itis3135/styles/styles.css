@@ -5,6 +5,7 @@
     --accent-color-3: #ffbb00;
     --hover-color-1: #ffcc96;
     --hover-color-2: #fcefba;
+    --form-text-color: #e2e2c9;
     --row-headings: #171718;
     --row-color-1: #1f283b;
     --row-color-2: #181b25;
@@ -173,6 +174,7 @@ figcaption {
 
 label {
     font-size: 1.2rem;
+    text-align: right;
 }
 
 button {
@@ -193,8 +195,22 @@ input {
     margin: 15px;
     border: 1px solid var(--accent-color-1);
     background-color: transparent;
-    color: white;
+    color: var(--form-text-color);
     padding: 6px;
+}
+
+form {
+    max-width: 50%;
+}
+
+#form-button, #courses-text-button {
+    background-color: var(--accent-color-2);
+    color: var(--background-color);
+    border-style: none;
+}
+
+#form-button:hover, #courses-text-button:hover {
+    background-color: var(--hover-color-2);
 }
 
 p a {

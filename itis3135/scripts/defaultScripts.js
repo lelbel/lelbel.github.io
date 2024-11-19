@@ -12,7 +12,6 @@ const gameRecText = document.getElementById("game-rec-text");
 const submitAge = document.getElementById("submit-age");
 const ageText = document.getElementById("age-text");
 
-
 /*
 //check if script is running
 jsTest.onclick = function() {
