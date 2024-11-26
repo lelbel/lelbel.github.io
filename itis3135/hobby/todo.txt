@@ -1,15 +1,8 @@
-How Reviews are Written
-- explain the "gamer points" system
-- make a step-by-step diagram of reviewing (silly)
-- some third thing
-
 
 NOTES
 - set max width
 - check accumulus for any errors when done
 - review whole canvas page before being done
-- reset default page to home
-
 
 DONE
 - add alt text for videos
@@ -34,3 +27,5 @@ DONE
 - GAME RELEASE SCHEDULE
 - add text explaining what the section is
 - WHY
+- HOW REVIEWS ARE WRITTEN
+- reset default page to home
