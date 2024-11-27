@@ -16,10 +16,6 @@
 
 /*-----mobile device media query-----*/
 @media screen and ( min-width: 370px ) and ( max-width: 600px ) {
-    #colorbox {
-        background-color:red;
-    }
-
     :root {
         font-size: 12;
     }
@@ -41,16 +37,10 @@
     input {
         width: 70%;
     }
-
-    
 }
 
 /*-----tablet media query-----*/
 @media screen and ( min-width: 601px ) and ( max-width: 980px )  {
-    #colorbox {
-        background-color:orange;
-    }
-
     :root {
         font-size: 12;
     }
@@ -68,10 +58,6 @@
 
 /*-----laptop/small screen media query-----*/
 @media screen and ( min-width: 981px ) and ( max-width: 1400px ) {
-    #colorbox {
-        background-color:yellow;
-    }
-
     :root {
         font-size: 12;
     }
