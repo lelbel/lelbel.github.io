@@ -16,7 +16,7 @@
             <h2>BYO Intro</h2>
             <h3>Time to BYO Intro page, please fill out the form below so we can create your own page</h3>
 
-            <form>
+            <form id="byo-intro-form">
                 <label for="form-name">Name</label>
                 <input type="text" id="form-name" name="form-name" placeholder="Name" value="Lily" required><br>
 
@@ -24,8 +24,7 @@
                 <input type="text" id="form-mascot" name="form-mascot" placeholder="Mascot" value="Liquid Eel" required><br>
 
                 <label for="form-image">Image</label>
-                <input type="file" id="form-image" name="form-image" placeholder="Image" required><br>
-                <!--check file extention-->
+                <input type="file" id="form-image" name="form-image" placeholder="Image" accept=".png, .jpg" required><br>
 
                 <label for="form-professional-background">Professional Background</label>
                 <input type="text" id="form-professional-background" name="form-professional-background" placeholder="Professional Background" value="Teaching Assistant" required><br>
@@ -39,11 +38,11 @@
                 <label for="form-computer-platform">Primary Computer Platform</label>
                 <input type="text" id="form-computer-platform" name="form-computer-platform" placeholder="Primary Computer Platform" value="Windows Desktop and Laptop" required><br>
 
-                <!--courses current taking js implementation (add value)-->
                 <label for="form-courses">Courses Currently Taking</label>
-                <input type="button" id="courses-text-button" value="Open Text Box"><br>
-                <input type="hidden" id="form-courses" name="form-courses" placeholder="Courses Currently Taking" required><br>
-
+                <input type="button" id="courses-text-button" value="Add Course Text Box"><br>
+                <div id="form-courses">
+                    
+                </div>
 
 
                 <label for="form-funny-things">Funny Thing?</label>
@@ -57,8 +56,8 @@
                 <label for="yes">Yes</label>
                 <input type="radio" id="yes" name="yes" required><br>
 
-                <input type="submit" value="Submit" id="form-button">
-                <input type="reset" value="Reset" id="form-button">
+                <input type="submit" value="Submit" id="form-submit-button">
+                <input type="reset" value="Reset" id="form-reset-button">
 
 
             </form>

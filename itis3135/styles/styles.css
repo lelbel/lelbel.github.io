@@ -189,7 +189,7 @@ form {
     max-width: 50%;
 }
 
-#form-button, #courses-text-button {
+#form-submit-button, #courses-text-button, #form-reset-button, #form-button-remove {
     background-color: var(--accent-color-2);
     color: var(--background-color);
     border-style: none;

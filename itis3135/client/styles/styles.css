@@ -23,6 +23,10 @@ body {
     padding: 0;
 }
 
+body section {
+    width: 100%;
+}
+
 main {
     max-width: 1200px;
     width: 90%;
@@ -87,7 +91,7 @@ a {
 
 main nav {
     padding: 10px 10px;
-    margin: 20px auto;
+    margin: 10px auto;
 }
 
 main nav a {
@@ -113,6 +117,17 @@ hr {
 img {
     max-width: 100%;
     max-height: 100%;
+}
+
+footer {
+    background-color: var(--accent-color-1);
+    text-align: center;
+    padding: 8px;
+}
+
+footer a {
+    font-family: Parkinsans;
+    text-decoration: none;
 }
 
 /*-----nav selectors-----*/
