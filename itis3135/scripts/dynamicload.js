@@ -49,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
             const footerContainer = document.getElementById("footer-container");
             const footer = document.createElement("footer");
             const footerNav = document.createElement("nav");
+            footer.appendChild(footerNav);
             data.forEach((item) => {
                 //check if item is an <a> element
                 if (item.element === "a" && item.nav === "default") {
@@ -78,7 +79,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
                 //append elements to footer container
                 footerContainer.appendChild(footer);
-                footer.appendChild(footerNav);
             });
         })
         .catch((error) => console.error("Error fetching footer elements:", error));

@@ -178,6 +178,9 @@ footer {
 footer p {
     font-family: Habbo;
     text-align: center;
+    margin: 0 auto;
+    font-size: 2rem;
+    padding: 5px;
 }
 
 table, tr, th, td {
