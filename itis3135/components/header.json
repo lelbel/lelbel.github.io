@@ -1,0 +1,20 @@
+[    
+    {"element": "h1", "nav": "default", "name": "Lily Elbel's Liquid Eel ---> ITIS 3135 <---"},
+    {"element": "a", "nav": "default", "name": "Home", "url": "./"},
+    {"element": "a", "nav": "default", "name": "Introduction", "url": "introduction.html"},
+    {"element": "a", "nav": "default", "name": "Contract", "url": "contract.html"},
+    {"element": "a", "nav": "default", "name": "About", "url": "about.html"},
+    {"element": "a", "nav": "default", "name": "Evaluations", "url": "websiteEvaluations.html"},
+    {"element": "a", "nav": "default", "name": "Tables", "url": "tables.html"},
+    {"element": "a", "nav": "default", "name": "Forms", "url": "forms.html"},
+    {"element": "a", "nav": "default", "name": "First Scripts", "url": "firstScripts.html"},
+    {"element": "a", "nav": "default", "name": "BYO Intro", "url": "byoIntro.html"},
+    {"element": "a", "nav": "default", "name": "Drawing", "url": "drawing.html"},
+    {"element": "a", "nav": "default", "name": "Gallery", "url": "gallery.html"},
+    {"element": "a", "nav": "default", "name": "Project Overview", "url": "projectOverview.html"},
+    {"element": "a", "nav": "default", "name": "Peer Review 1", "url": "review1.html"},
+    {"element": "a", "nav": "default", "name": "Peer Review 2", "url": "review2.html"},
+    {"element": "a", "nav": "special", "name": "Crappy", "url": "stuff/even more folder/INDEX HTML $$.htm"},
+    {"element": "a", "nav": "special", "name": "Hobby", "url": "hobby/index.html"},
+    {"element": "a", "nav": "special", "name": "Client", "url": "client/index.html"}
+]
