@@ -14,53 +14,59 @@
             <div data-include="components/header.html"></div>
 
             <h2>BYO Intro</h2>
-            <h3>Time to BYO Intro page, please fill out the form below so we can create your own page</h3>
-
-            <form id="byo-intro-form">
-                <label for="form-name">Name</label>
-                <input type="text" id="form-name" name="form-name" placeholder="Name" value="Lily" required><br>
-
-                <label for="form-mascot">Mascot</label>
-                <input type="text" id="form-mascot" name="form-mascot" placeholder="Mascot" value="Liquid Eel" required><br>
-
-                <label for="form-image">Image</label>
-                <input type="file" id="form-image" name="form-image" placeholder="Image" accept=".png, .jpg" required><br>
-
-                <label for="form-professional-background">Professional Background</label>
-                <input type="text" id="form-professional-background" name="form-professional-background" placeholder="Professional Background" value="Teaching Assistant" required><br>
-
-                <label for="form-academic-background">Academin Background</label>
-                <input type="text" id="form-academic-background" name="form-academic-background" placeholder="Academic Background" value="Computer Science Student" required><br>
-
-                <label for="form-webdev-background">Background in Web Development</label>
-                <input type="text" id="form-webdev-background" name="form-webdev-background" placeholder="Web Development Background" value="Currently taking ITIS 3135" required><br>
                 
-                <label for="form-computer-platform">Primary Computer Platform</label>
-                <input type="text" id="form-computer-platform" name="form-computer-platform" placeholder="Primary Computer Platform" value="Windows Desktop and Laptop" required><br>
+            <section id="form-headings">
+                <h3>Time to BYO Intro page, please fill out the form below so we can create your own page</h3>
+                <h4>Please note that fields marked with * are required.</h4>
+            </section>
+            
+            <form id="byo-intro-form">
+                <label for="form-name">Name*</label>
+                <input type="text" id="form-name" name="form-name" placeholder="Name" value="Lily"><br>
 
-                <label for="form-courses">Courses Currently Taking</label>
+                <label for="form-mascot">Mascot*</label>
+                <input type="text" id="form-mascot" name="form-mascot" placeholder="Mascot" value="Liquid Eel"><br>
+
+                <label for="form-image">Image*</label>
+                <input type="file" id="form-image" name="form-image" placeholder="Image" accept=".png, .jpg"><br>
+
+                <label for="form-personal-background">Personal Background*</label>
+                <input type="text" id="form-personal-background" name="form-personal-background" placeholder="Personal Background" value="I like video games!"><br>
+
+                <label for="form-professional-background">Professional Background*</label>
+                <input type="text" id="form-professional-background" name="form-professional-background" placeholder="Professional Background" value="Teaching Assistant"><br>
+
+                <label for="form-academic-background">Academic Background*</label>
+                <input type="text" id="form-academic-background" name="form-academic-background" placeholder="Academic Background" value="Computer Science Student"><br>
+
+                <label for="form-webdev-background">Background in Web Dev*</label>
+                <input type="text" id="form-webdev-background" name="form-webdev-background" placeholder="Web Dev Background" value="Currently taking ITIS 3135"><br>
+                
+                <label for="form-computer-platform">Primary Computer Platform*</label>
+                <input type="text" id="form-computer-platform" name="form-computer-platform" placeholder="Primary Computer Platform" value="Windows Desktop and Laptop"><br>
+
+                <label for="form-courses">Courses Currently Taking*</label>
                 <input type="button" id="courses-text-button" value="Add Course Text Box"><br>
-                <div id="form-courses">
-                    
-                </div>
+                <div id="form-courses"></div>
 
-
-                <label for="form-funny-things">Funny Thing?</label>
-                <input type="text" id="form-funny-things" name="form-funny-things" placeholder="Funny Things" value="My favorite food is pasta"><br>
+                <label for="form-funny-thing">Funny Thing?</label>
+                <input type="text" id="form-funny-thing" name="form-funny-things" placeholder="Funny Things" value="My favorite food is pasta"><br>
 
                 <label for="form-anything-else">Anything Else?</label>
                 <input type="text" id="form-anything-else" name="form-anything-else" placeholder="Anything Else" value="Nope"><br>
 
-                <p>I understand that what is on this page is not password protected and I will not put anything here that I do not want publicly available</p>
+                <p>I understand that what is on this page is not password protected and I will not put anything here that I do not want publicly available*</p>
 
-                <label for="yes">Yes</label>
-                <input type="radio" id="yes" name="yes" required><br>
+                <label for="form-agreement">Yes</label>
+                <input type="radio" id="form-agreement" name="yes"><br>
 
                 <input type="submit" value="Submit" id="form-submit-button">
                 <input type="reset" value="Reset" id="form-reset-button">
-
-
             </form>
+
+            <section id="byo-intro-display">
+                <div id="load-image"></div>
+            </section>
         </main>
     
         <!--footer-->
