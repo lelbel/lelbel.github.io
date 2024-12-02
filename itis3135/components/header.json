@@ -10,7 +10,7 @@
     {"element": "a", "nav": "default", "name": "First Scripts", "url": "firstScripts.html"},
     {"element": "a", "nav": "default", "name": "BYO Intro", "url": "byoIntro.html"},
     {"element": "a", "nav": "default", "name": "Drawing", "url": "drawing.html"},
-    {"element": "a", "nav": "default", "name": "Gallery", "url": "gallery.html"},
+    {"element": "a", "nav": "default", "name": "Slideshow", "url": "slideshow.html"},
     {"element": "a", "nav": "default", "name": "Project Overview", "url": "projectOverview.html"},
     {"element": "a", "nav": "default", "name": "Peer Review 1", "url": "review1.html"},
     {"element": "a", "nav": "default", "name": "Peer Review 2", "url": "review2.html"},
