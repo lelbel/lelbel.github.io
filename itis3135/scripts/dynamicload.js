@@ -14,12 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
 
                     if (item.nav === "default") { //add default items to default nav
                         const headerNavItemDefault = document.createElement("a"); //create a element
-                        headerNavItemDefault.textContent = item.name; //name element
+                        headerNavItemDefault.textContent = item.text; //name element
                         headerNavItemDefault.href = item.url; //give element url
                         headerNavDefault.appendChild(headerNavItemDefault);
                     } else if (item.nav === "special") { //add special items to special nav
                         const headerNavItemSpecial = document.createElement("a"); //create a element
-                        headerNavItemSpecial.textContent = item.name; //name element
+                        headerNavItemSpecial.textContent = item.text; //name element
                         headerNavItemSpecial.href = item.url; //give element url
                         headerNavItemSpecial.setAttribute("target", "_blank"); //set target to blank
                         headerNavSpecial.appendChild(headerNavItemSpecial);
@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 } else { //if element is not an <a>
                     const headerElement = document.createElement(item.element); //create element of specified type
 
-                    if (item.name !== null) { //check if there is a text field
-                        headerElement.textContent = item.name; //add text to element
+                    if (item.text !== null) { //check if there is a text field
+                        headerElement.textContent = item.text; //add text to element
                     }
                     header.appendChild(headerElement);
                 }
@@ -54,15 +54,15 @@ document.addEventListener("DOMContentLoaded", function() {
                 if (item.element === "a" && item.nav === "default") {
 
                     const footerNavItem = document.createElement("a"); //create a element
-                        footerNavItem.textContent = item.name; //name element
+                        footerNavItem.textContent = item.text; //name element
                         footerNavItem.href = item.url; //give element url
                         footerNavItem.setAttribute("target", "_blank"); //set target to blank
                         footerNav.appendChild(footerNavItem);
                 } else { //if element is not an <a>
                     const footerElement = document.createElement(item.element); //create element of specified type
 
-                    if (item.name !== null) { //check if there is a text field
-                        footerElement.textContent = item.name; //add text to element
+                    if (item.text !== null) { //check if there is a text field
+                        footerElement.textContent = item.text; //add text to element
                     }
 
                     if (item.url !== null) { //check if there is a text field
