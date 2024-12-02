@@ -35,12 +35,16 @@ coursesTextButton.onclick = (function displayCoursesText() {
     classInput.setAttribute("placeholder","Course");
     coursesArr.push(classInput);
     coursesTextbox.appendChild(classInput);
+    
+    var brCourses = document.createElement("br");
+    coursesTextbox.appendChild(brCourses);
 
     //remove button functionality
     removeButton.onclick = (function removeCourse() {
         coursesArr.pop();
         coursesTextbox.removeChild(classInput);
         coursesTextbox.removeChild(removeButton);
+        coursesTextbox.removeChild(brCourses);
     });
 
     //console.log(coursesArr);
