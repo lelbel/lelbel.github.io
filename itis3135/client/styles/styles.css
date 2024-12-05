@@ -88,6 +88,17 @@ a {
     text-decoration: underline;
 }
 
+button {
+    border-style: solid;
+    border-color: var(--accent-color-2);
+    color: var(--accent-color-2);
+    background: var(--accent-color-3);
+    font-family: Parkinsans;
+    font-size: 1.5rem;
+    padding: 10px 40px;
+    margin: 20px;
+}
+
 
 main nav {
     padding: 10px 10px;
@@ -198,6 +209,83 @@ header nav a:hover {
 .left-column img {
     width: 100%;
     margin-bottom: 20px;
+}
+
+
+/*-----gallery-----*/
+.gallery {
+    position: relative;
+}
+
+.gallery-active {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-image {
+    display: none;
+}
+
+#btn-next, #btn-prev {
+    cursor: pointer;
+    position: absolute;
+    top: 35%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: var(--accent-color-2);
+    background-color: transparent;
+    font-size: 2rem;
+    border-style: none;
+    margin-left: -30px;
+    margin-right: -30px;
+}
+
+#btn-next:hover, #btn-prev:hover {
+    color: var(--background-color);
+    background-color: var(--accent-color-2);
+}
+
+#btn-next {
+    right: 0;
+}
+
+.photo-number {
+    text-align: center;
+    font-family: Tahoma;
+    font-size: var(--text-size);
+    color: var(--accent-color-1);
+}
+
+.gallery-row {
+    display: flex;
+    max-width: 100%;
+    min-width: 100%;
+    padding: 10px;
+}
+
+.gallery-column img{
+    width: 100%;
+}
+
+.gallery figcaption {
+    font-size: 1.5rem;
+}
+
+.photo-number {
+    text-align: center;
+    color: var(--accent-color-2);
+}
+
+.gallery-thumbnail {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+.gallery-thumbnail:hover {
+    opacity: 1;
 }
 
 /*-----fonts-----*/
