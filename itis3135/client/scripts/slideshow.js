@@ -1,3 +1,4 @@
+//HTML elements
 const galleryImage = document.getElementsByClassName("gallery-image");
 const galleryThumbnail = document.getElementsByClassName("gallery-image");
 const galleryImage1 = document.getElementById("gallery-image-1");
@@ -5,14 +6,12 @@ const galleryImage2 = document.getElementById("gallery-image-2");
 const galleryImage3 = document.getElementById("gallery-image-3");
 const galleryImage4 = document.getElementById("gallery-image-4");
 const galleryImage5 = document.getElementById("gallery-image-5");
-//const galleryImage6 = document.getElementById("gallery-image-6");
-//const galleryImage7 = document.getElementById("gallery-image-7");
-//const galleryImage8 = document.getElementById("gallery-image-8");
-//const galleryImage9 = document.getElementById("gallery-image-9");
+const galleryImage6 = document.getElementById("gallery-image-6");
+const galleryImage7 = document.getElementById("gallery-image-7");
+const galleryImage8 = document.getElementById("gallery-image-8");
 const btnNext = document.getElementById("btn-next");
 const btnPrev = document.getElementById("btn-prev");
-const galleryImages = [galleryImage1, galleryImage2, galleryImage3, galleryImage4, galleryImage5];
-//const galleryImages = [galleryImage1, galleryImage2, galleryImage3, galleryImage4, galleryImage5, galleryImage6, galleryImage7, galleryImage8, galleryImage9];
+const galleryImages = [galleryImage1, galleryImage2, galleryImage3, galleryImage4, galleryImage5, galleryImage6, galleryImage7, galleryImage8];
 var imageIndex = 0;
 
 //update image display function
@@ -52,7 +51,7 @@ btnPrev.onclick = (function prevImage() {
     updateDisplay(imageIndex);
 });
 
-
+//detect what element is click. if it is a thumbnail element, go to the image associated with it
 const getId = (event) => {
     const clickedElement = event.srcElement.id;
     const idSubstring = clickedElement.substring(0, 17);
