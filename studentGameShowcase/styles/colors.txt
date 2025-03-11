@@ -1,0 +1,5 @@
+dark pink: #50203a
+light pink: #cc2d6f
+off-white: #cccccc
+light blue: #169f98
+dark blue : #10292e

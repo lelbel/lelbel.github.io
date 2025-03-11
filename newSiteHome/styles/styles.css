@@ -1,0 +1,126 @@
+:root {
+    --text-color: black;
+    --sitcky-color: #f9d909;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("/images/paper2.png");
+    background-size: 700px;
+    font-family: Baby Doll;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+
+img {
+    margin: 0 auto;
+}
+
+#sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+    padding-top: 60px;
+}
+
+#sidenav a {
+    padding: 24px 24px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+  
+#sidenav a:hover {
+    color: #f1f1f1;
+}
+
+#open-sidenav {
+    font-size: 20px;
+    position: fixed;
+    z-index: 99;
+}
+
+.button {
+    background-image: url("/images/altPaper.png");
+    font-family: Baby Doll;
+    border-style: none;
+    font-size: 1.4rem;
+    padding: 10px 30px;
+    margin: 0 auto;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex: 50%;
+    margin: 10px;
+}
+
+#level-down-game {
+    display: block;
+    width: 960px;
+    height: 540px;
+    margin: 0 auto;
+}
+
+#level-down-title {
+    width: 30%;
+    height: 30%;
+}
+
+/*-----fonts-----*/
+@font-face {
+    font-family: Baby Doll;
+    src: url(/styles/fonts/Baby\ Doll.ttf);
+}
+
+/*
+.sticky {
+    background-image: url("/images/noteatest.svg");
+    background-size: 360px;
+    background-color: var(--sitcky-color);
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+}
+
+video {
+    width: 320px;
+    height: 240px;
+    display: block;
+    margin: 0 auto;
+}
+*/
