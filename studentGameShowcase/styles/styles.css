@@ -3,6 +3,8 @@
     --h2-font-size: 1.8rem;
     --h1-letter-spacing: 0.3rem;
     --h3-font-size: 2.2rem;
+    --h4-font-size: 1.2rem;
+    --ul-font-size: 1.2rem;
     --header-nav-font-size: 1.2rem;
     --button-font-size: 2rem;
     --footer-font-size: 0.9rem;
@@ -22,9 +24,9 @@ body {
 }
 
 main {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: center;*/
     margin: 0 auto;
     max-width: 1200px;
 }
@@ -59,6 +61,20 @@ h3 {
     margin: 1rem auto;
 }
 
+h4 {
+    font-size: var(--h4-font-size);
+    color: #7e112c;
+}
+
+section {
+    margin-left: 4rem;
+}
+
+p a, section a {
+    text-decoration: underline;
+    color: #E5446D;
+}
+
 p {
     line-height: 28px;
     max-width: 950px;
@@ -66,6 +82,22 @@ p {
     font-size: var(--font-size);
     color: #2a2b2a;
     min-width: 80%;
+    margin: 1.5rem auto;
+}
+
+ul {
+    line-height: 28px;
+    max-width: 950px;
+    font-family: Roboto;
+    font-size: var(--ul-font-size);
+    color: #2a2b2a;
+    min-width: 80%;
+    margin: 0 auto;
+}
+
+li {
+    font-size: var(--font-size);
+    margin: 1rem auto;
 }
 
 header nav {
