@@ -39,7 +39,7 @@ header {
 
 h1 {
     text-align: left;
-    color: #2a2b2a;
+    color: #021246;
     font-family: Upheaval;
     font-size: var(--h1-font-size);
     letter-spacing: var(--h1-letter-spacing);
@@ -48,13 +48,13 @@ h1 {
 
 h2 {
     text-align: center;
-    color: #2a2b2a;
+    color: #3d0c68;
     font-family: Minecraft Bold;
     font-size: var(--h2-font-size);
 }
 
 h3 {
-    color: #E5446D;
+    color: #ff0099;
     font-family: Minecraft;
     font-size: var(--h3-font-size);
     text-align: center;
@@ -63,7 +63,7 @@ h3 {
 
 h4 {
     font-size: var(--h4-font-size);
-    color: #7e112c;
+    color: #7c047b;
 }
 
 section {
@@ -74,7 +74,7 @@ section {
 
 p a, section a {
     text-decoration: underline;
-    color: #E5446D;
+    color: #ff0099;
 }
 
 p {
@@ -82,7 +82,7 @@ p {
     max-width: 950px;
     font-family: Roboto;
     font-size: var(--font-size);
-    color: #2a2b2a;
+    color: #021246;
     min-width: 80%;
     margin: 1.5rem auto;
 }
@@ -92,7 +92,7 @@ ul {
     max-width: 950px;
     font-family: Roboto;
     font-size: var(--ul-font-size);
-    color: #2a2b2a;
+    color: #021246;
     min-width: 80%;
     margin: 0 auto;
 }
@@ -111,7 +111,7 @@ header nav {
 }
 
 header nav a {
-    color: #6D695F;
+    color: #3d0c68;
     text-decoration: none;
     margin: 3px 18px;
     font-family: Minecraft;
@@ -119,7 +119,7 @@ header nav a {
 }   
 
 header nav a:hover {
-    color: #AAA69D;
+    color: #7c047b;
 }
 
 header nav a:first-of-type {
@@ -128,7 +128,7 @@ header nav a:first-of-type {
 }
 
 hr {
-    border: 0.5px solid #706C61;
+    border: 0.5px solid #3d0c68;
 }
 
 .button {
@@ -151,7 +151,7 @@ hr {
 footer p {
     margin: 0.5rem auto;
     text-align: center;
-    color: #6D695F;
+    color: #3d0c68;
     font-size: var(--footer-font-size);
 }
 
@@ -167,7 +167,7 @@ footer nav {
 }
 
 footer nav a {
-    color: #6D695F;
+    color: #3d0c68;
     text-decoration: none;
     margin: 3px 15px;
     font-family: Minecraft;
@@ -176,6 +176,12 @@ footer nav a {
 
 footer nav a:hover {
     text-decoration: underline;
+}
+
+#logo {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
 }
 
 /*-----fonts-----*/
